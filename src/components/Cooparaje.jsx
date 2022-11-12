@@ -13,18 +13,101 @@ export default function RecursosPage() {
   return (
     <>
       <div className="z-20 flex flex-col items-center justify-center w-full min-h-screen overflow-hidden text-center bg-pattern bg-gray-800 ">
-        <div className="fixed inset-0 p-2  pt-20 min-h-[90vh] dragArea"></div>
+        <div className="fixed hidden md:block inset-0 p-2  pt-20 min-h-[90vh] dragArea"></div>
         <div className="relative z-50 flex flex-col items-center justify-center w-full min-h-screen px-2 py-12 mx-auto overflow-hidden ">
           <InstantSearch searchClient={searchClient} indexName="recursos">
+            <div className="z-[1000] md:hidden fixed bg-gray-900 right-0 top-0 w-80 group">
+              <div className="flex items-center justify-between w-full pl-3 py-0 font-mono font-bold text-sm text-white uppercase duration-300 bg-[#e74446] active:bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing active:text-gray-900">
+                <div className="flex items-center justify-start w-full text-left">
+                  {/* <MdOutlineDragHandle className='mr-2 text-xl' /> */}
+                  <span>Buscador</span>
+                </div>
+                <button
+                  className="px-2 cursor-pointer relative z-50 hover:bg-gray-800/20"
+                  onClick={() => setSerchVisible(!isSearchVisible)}
+                >
+                  {/* <MdArrowDropDown className='text-2xl' /> */}-
+                </button>
+              </div>
+              {isSearchVisible && (
+                <div className="flex flex-col items-center justify-center w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20">
+                  <div className="w-full pt-0">
+                    <div className="w-full p-2 mx-auto ">
+                      <div className="w-full">
+                        <SearchBox
+                          className="w-full pt-2 mx-auto mb-2"
+                          showLoadingIndicator
+                          translations={{
+                            submitTitle: "Add your search query.",
+                            resetTitle: "Reset your search query.",
+                            placeholder: "Buscar aquí",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="z-[1000] md:hidden fixed block  left-0 top-24 w-80 group">
+              <div className="flex items-center justify-between w-full pl-3 py-0 font-mono font-bold text-sm text-white uppercase duration-300 bg-[#e74446] active:bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing active:text-gray-900">
+                <div className="flex items-center justify-start w-full text-left">
+                  {/* <MdOutlineDragHandle className='mr-2 text-xl' /> */}
+                  <span>Espacios</span>
+                </div>
+                <button
+                  className="px-2 cursor-pointer relative z-50 hover:bg-gray-800/20"
+                  onClick={() => setListVisible(!isListVisible)}
+                >
+                  {/* <MdArrowDropDown className='text-2xl' /> */}-
+                </button>
+              </div>
+              {isListVisible && (
+                <div className="flex flex-col relative items-center justify-center w-full mx-auto">
+                  <div className="w-full pt-0">
+                    <ResizableBox
+                      width={320}
+                      height={450}
+                      minConstraints={[320, 300]}
+                      maxConstraints={[320, 700]}
+                      handle={
+                        <div className="absolute bottom-0 left-0 right-0 p-2 duration-300 bg-gradient-to-b from-transparent to-gray-900 hover:opacity-30 cursor-n-resize">
+                          <div className="w-32 h-1 mx-auto bg-white rounded-full"></div>
+                        </div>
+                      }
+                      className="overflow-y-auto relative max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20"
+                    >
+                      <div className="w-full px-2 pt-3 pb-8 mx-auto ">
+                        <RefinementList
+                          attribute="espacio.title"
+                          showMore={true}
+                          operator="and"
+                          showMoreLimit={60}
+                          translations={{
+                            showMore(expanded) {
+                              return expanded ? "Mostrar menos" : "Mostrar más";
+                            },
+                            noResults: "Sin resultados",
+                            submitTitle: "Iniciar búsqueda",
+                            resetTitle: "Reiniciar búsqueda",
+                            placeholder: "Buscador",
+                          }}
+                        />
+                      </div>
+                    </ResizableBox>
+                  </div>
+                </div>
+              )}
+            </div>
             <Draggable handle=".handle" defaultPosition={{ x: 50, y: 50 }} position={null} bounds=".dragArea" scale={1}>
-              <div className="z-[999999] fixed bg-gray-900 left-0 top-24 w-80 group">
+              <div className="z-[1000] hidden md:block fixed bg-gray-900 left-0 top-24 w-80 group">
                 <div className="flex items-center justify-between w-full pl-3 py-0 font-mono font-bold text-sm text-white uppercase duration-300 bg-[#e74446] active:bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing active:text-gray-900">
                   <div className="flex items-center justify-start w-full text-left">
                     {/* <MdOutlineDragHandle className='mr-2 text-xl' /> */}
                     <span>Buscador</span>
                   </div>
                   <button
-                    className="px-2 cursor-pointer hover:bg-gray-800/20"
+                    className="px-2 cursor-pointer relative z-50 hover:bg-gray-800/20"
                     onClick={() => setSerchVisible(!isSearchVisible)}
                   >
                     {/* <MdArrowDropDown className='text-2xl' /> */}-
@@ -58,14 +141,14 @@ export default function RecursosPage() {
               bounds=".dragArea"
               scale={1}
             >
-              <div className="z-[999999] fixed  left-0 top-24 w-80 group">
+              <div className="z-[1000] hidden md:block md:fixed left-0 top-24 w-80 group">
                 <div className="flex items-center justify-between w-full pl-3 py-0 font-mono font-bold text-sm text-white uppercase duration-300 bg-[#e74446] active:bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing active:text-gray-900">
                   <div className="flex items-center justify-start w-full text-left">
                     {/* <MdOutlineDragHandle className='mr-2 text-xl' /> */}
                     <span>Espacios</span>
                   </div>
                   <button
-                    className="px-2 cursor-pointer hover:bg-gray-800/20"
+                    className="px-2 cursor-pointer relative z-50 hover:bg-gray-800/20"
                     onClick={() => setListVisible(!isListVisible)}
                   >
                     {/* <MdArrowDropDown className='text-2xl' /> */}-

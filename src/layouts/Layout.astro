@@ -720,7 +720,7 @@ const { title } = Astro.props;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; */
-    @apply grid grid-cols-1 gap-3;
+    @apply grid grid-cols-1 gap-3 snap-y;
   }
   .ais-Panel-body .ais-InfiniteHits-list,
   .ais-Panel-body .ais-InfiniteResults-list,
@@ -730,7 +730,7 @@ const { title } = Astro.props;
   }
 
   .ais-Hits-item {
-    @apply bg-transparent !important;
+    @apply bg-transparent snap-center !important;
   }
 
   .ais-InfiniteHits-item,
