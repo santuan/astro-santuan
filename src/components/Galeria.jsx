@@ -1,4 +1,5 @@
 import React from "react";
+
 export default function BackgroundSlider() {
   return (
     <>
@@ -42,8 +43,7 @@ export default function BackgroundSlider() {
 
       <div className="relative z-20 w-full bg-black bg-pattern " id="ejemploBlender">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 p-3 mx-auto md:p-0 md:pt-1">
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -54,9 +54,7 @@ export default function BackgroundSlider() {
               src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1630030301/stn-renders/567_vpomfk.jpg"
             />
           </div>
-
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -68,8 +66,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -81,8 +78,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -94,8 +90,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -107,8 +102,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -133,8 +127,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -146,8 +139,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -159,8 +151,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -172,7 +163,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
+          <div className="aspect-square">
             {/* <div className="relative cursor-pointer"> */}
             <img
               loading="lazy"
@@ -185,8 +176,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -198,8 +188,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -211,8 +200,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -224,8 +212,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -237,8 +224,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -250,8 +236,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -263,8 +248,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -276,8 +260,7 @@ export default function BackgroundSlider() {
             />
           </div>
 
-          <div className="">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
+          <div className="aspect-square">
             <img
               loading="lazy"
               height="900"
@@ -290,7 +273,6 @@ export default function BackgroundSlider() {
           </div>
 
           <div className="col-span-3 md:col-span-1">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
             <img
               loading="lazy"
               height="864"
@@ -303,7 +285,6 @@ export default function BackgroundSlider() {
           </div>
 
           <div className="col-span-3 md:col-span-1">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
             <img
               loading="lazy"
               height="864"
@@ -316,7 +297,6 @@ export default function BackgroundSlider() {
           </div>
 
           <div className="col-span-3 md:col-span-1">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
             <img
               loading="lazy"
               height="864"
@@ -342,7 +322,6 @@ export default function BackgroundSlider() {
           </div>
 
           <div className="col-span-3 md:col-span-1">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
             <img
               loading="lazy"
               title="item"
@@ -355,7 +334,6 @@ export default function BackgroundSlider() {
           </div>
 
           <div className="col-span-3 md:col-span-1">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
             <img
               loading="lazy"
               title="item"
@@ -368,7 +346,6 @@ export default function BackgroundSlider() {
           </div>
 
           <div className="col-span-3 md:col-span-1">
-            {/* <div className="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full md:col-span-1"> */}
             <img
               loading="lazy"
               title="item"

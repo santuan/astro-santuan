@@ -30,7 +30,7 @@ const { title } = Astro.props;
   }
   html {
     font-family: system-ui, sans-serif;
-    @apply bg-gray-900 text-white;
+    @apply bg-gray-900 text-white scroll-smooth;
   }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
@@ -225,12 +225,16 @@ const { title } = Astro.props;
   .ais-InfiniteResults-loadMore[disabled],
   .ais-Menu-showMore[disabled],
   .ais-RangeInput-submit[disabled],
-  .ais-RefinementList-showMore[disabled],
+
   .ais-SearchBox-submit[disabled],
   .ais-SearchBox-reset[disabled],
   .ais-VoiceSearch-button[disabled] {
     cursor: default;
     @apply opacity-0;
+  }
+
+  .ais-RefinementList-showMore[disabled] {
+    @apply opacity-20;
   }
 
   .ais-Breadcrumb-list,
@@ -399,7 +403,7 @@ const { title } = Astro.props;
   }
 
   .ais-RefinementList-labelText {
-    @apply w-full px-3 font-mono text-base font-normal text-left;
+    @apply w-full px-3 font-mono truncate  text-xs sm:text-base font-normal text-left;
   }
 
   .ais-RefinementList-count {
@@ -484,7 +488,7 @@ const { title } = Astro.props;
   .ais-InfiniteResults-loadMore,
   .ais-Menu-showMore,
   .ais-RefinementList-showMore {
-    @apply block w-full px-5 py-2 font-mono text-sm font-bold text-white uppercase transition-all duration-700 bg-green-600 rounded outline-none;
+    @apply block w-full  px-5 py-2 font-mono text-sm font-bold text-white uppercase transition-all duration-700 bg-green-600 rounded outline-none;
   }
   .ais-ClearRefinements-button {
     @apply print:hidden inline-flex  items-center justify-center px-4 py-2 font-mono text-xs md:text-sm font-bold tracking-wide duration-300 bg-gray-900/80 text-gray-100 border-0 rounded-md cursor-pointer ring-0 bg-opacity-90 hover:ring-2 hover:bg-opacity-80 focus-visible:ring-2 shadow-lg hover:shadow focus-visible:ring-offset-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus:ring-2 ring-gray-800;
@@ -552,6 +556,7 @@ const { title } = Astro.props;
   }
 
   .ais-RefinementList-showMore {
+  
   }
 
   .ais-RefinementList {
@@ -561,7 +566,7 @@ const { title } = Astro.props;
     overflow-y: auto;
     position: relative;
     height: 100%;
-    @apply md:pb-2 grid gap-1;
+    @apply md:pb-2 grid grid-cols-1 gap-1;
   }
 
   .ais-CurrentRefinements {
@@ -702,7 +707,7 @@ const { title } = Astro.props;
   .ais-HierarchicalMenu-showMore,
   .ais-Menu-showMore,
   .ais-RefinementList-showMore {
-    @apply mt-0;
+    @apply my-3;
   }
 
   .ais-Highlight-highlighted,
@@ -997,7 +1002,7 @@ const { title } = Astro.props;
     -moz-appearance: none;
     appearance: none;
     /*padding: 0.5rem 2rem;*/
-    @apply px-8 py-2 font-mono text-base text-gray-900 bg-gray-100 ring-transparent ring-2 focus:ring-yellow-600 rounded-xl;
+    @apply px-8 py-2 font-mono text-xs md:text-base text-gray-900 bg-gray-100 ring-transparent ring-2 focus:ring-yellow-600 rounded-xl;
     width: 100%;
     position: relative;
     /* background-color: #fff; */
@@ -1032,7 +1037,7 @@ const { title } = Astro.props;
   }
 
   .ais-SearchBox-submit {
-    left: 0.3rem;
+    left: 0.5rem;
   }
 
   .ais-SearchBox-reset {

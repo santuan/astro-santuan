@@ -15,8 +15,11 @@ export default function RecursosPage() {
         <div className="fixed hidden md:block inset-0 p-2  pt-20 min-h-[90vh] dragArea"></div>
         <div className="relative z-50 flex flex-col items-center justify-center w-full min-h-screen px-2 py-12 mx-auto overflow-hidden ">
           <InstantSearch searchClient={searchClient} indexName="recursos">
-            <div className="z-[1000] fixed block md:hidden bg-gray-900 left-5 top-24 w-80 rounded-lg overflow-hidden group">
-              <div className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900">
+            <div className="z-[9999] fixed block md:hidden bg-gray-900 left-auto right-5 md:left-4 top-3 md:top-24 w-60 rounded-lg overflow-hidden group">
+              <button
+                onClick={() => setSerchVisible(!isSearchVisible)}
+                className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900"
+              >
                 <div className="flex items-center h-8 justify-start w-full text-left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -28,12 +31,9 @@ export default function RecursosPage() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                   </svg>
-                  <span>Buscador</span>
+                  <span>Encontrador</span>
                 </div>
-                <button
-                  className="px-2 cursor-pointer relative z-[1001] hover:bg-gray-800/20"
-                  onClick={() => setSerchVisible(!isSearchVisible)}
-                >
+                <div className="px-2 cursor-pointer relative flex justify-center items-center z-[1001] h-8 hover:bg-gray-800/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -44,12 +44,12 @@ export default function RecursosPage() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                   </svg>
-                </button>
-              </div>
+                </div>
+              </button>
               <div
                 className={`${
                   isSearchVisible ? "hidden select-none" : "flex"
-                } flex-col items-center justify-center w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl  group-hover:shadow-amber-600/20`}
+                } flex-col items-center justify-center relative w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl  group-hover:shadow-amber-600/20`}
               >
                 <div className="w-full pt-0">
                   <div className="w-full p-2 mx-auto ">
@@ -66,21 +66,12 @@ export default function RecursosPage() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-center w-full mx-auto">
-                  <div className="w-full pt-0">
-                    <ResizableBox
-                      width={320}
-                      height={450}
-                      minConstraints={[320, 300]}
-                      maxConstraints={[320, 700]}
-                      handle={
-                        <div className="fixed bottom-0 left-0 right-0 p-2 duration-300 bg-gradient-to-b from-transparent to-gray-900 hover:opacity-30 cursor-n-resize">
-                          <div className="w-32 h-1 mx-auto bg-white rounded-full"></div>
-                        </div>
-                      }
-                      className="overflow-y-auto relative max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20"
+                <div className="flex flex-col relative items-center justify-center w-full mx-auto">
+                  <div className="w-full relative pt-0">
+                    <div
+                      className="overflow-y-auto relative max-h-[320px]  !w-full md:max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20"
                     >
-                      <div className="w-full px-2 pt-3 pb-8 mx-auto ">
+                      <div className="w-full px-2  mx-auto ">
                         <RefinementList
                           attribute="espacio.title"
                           showMore={true}
@@ -93,11 +84,11 @@ export default function RecursosPage() {
                             noResults: "Sin resultados",
                             submitTitle: "Iniciar búsqueda",
                             resetTitle: "Reiniciar búsqueda",
-                            placeholder: "Buscador",
+                            placeholder: "Encontrador",
                           }}
                         />
                       </div>
-                    </ResizableBox>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -116,10 +107,10 @@ export default function RecursosPage() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                     </svg>
-                    <span>Buscador</span>
+                    <span>Encontrador</span>
                   </div>
                   <button
-                    className="px-2 cursor-pointer relative z-[1001] hover:bg-gray-800/20"
+                    className="px-2 cursor-pointer relative z-[1001] h-8 hover:bg-gray-800/20 outline-none"
                     onClick={() => setSerchVisible(!isSearchVisible)}
                   >
                     <svg
@@ -137,7 +128,7 @@ export default function RecursosPage() {
                 <div
                   className={`${
                     isSearchVisible ? "hidden select-none" : "flex"
-                  } flex-col items-center justify-center w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl  group-hover:shadow-amber-600/20`}
+                  } flex-col items-center justify-center w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20`}
                 >
                   <div className="w-full pt-0">
                     <div className="w-full p-2 mx-auto ">
@@ -166,9 +157,9 @@ export default function RecursosPage() {
                             <div className="w-32 h-1 mx-auto bg-white rounded-full"></div>
                           </div>
                         }
-                        className="overflow-y-auto relative max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20"
+                        className="overflow-y-auto overscroll-contain relative max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20"
                       >
-                        <div className="w-full px-2 pt-3 pb-8 mx-auto ">
+                        <div className="w-full px-2 pt-3 pb-3 mx-auto ">
                           <RefinementList
                             attribute="espacio.title"
                             showMore={true}
@@ -181,7 +172,7 @@ export default function RecursosPage() {
                               noResults: "Sin resultados",
                               submitTitle: "Iniciar búsqueda",
                               resetTitle: "Reiniciar búsqueda",
-                              placeholder: "Buscador",
+                              placeholder: "Encontrador",
                             }}
                           />
                         </div>
@@ -192,9 +183,9 @@ export default function RecursosPage() {
               </div>
             </Draggable>
 
-            <div className="relative mx-auto w-96 ">
+            <div className="relative mx-auto pt-4 w-96 ">
               <Hits className="w-full mx-auto" hitComponent={PostPreview} />
-              <div className="fixed top-0 m-2 right-0 flex items-center justify-center">
+              <div className="fixed bottom-0 m-2 left-0 flex z-[999]  items-center justify-center">
                 <ClearRefinements
                   translations={{
                     reset: "Reiniciar",

@@ -1,0 +1,9 @@
+---
+import Lightbox from "./Modal/SvelteModal.svelte";
+const { alt, src, width, height } = Astro.props;
+---
+
+<div class="relative" >
+  <img alt={alt} src={src} width={width} height={height} />
+  <Lightbox client:visible alt={alt} src={src} />
+</div>
