@@ -15,7 +15,7 @@ import ImageLightbox from "../components/ImageLightbox.astro";
       Realizados en Blender
     </a>
     <a href="/recursos" class="fixed right-0 z-[888] btn top-0 yellow !text-xs m-2"> Ver recursos</a>
-    <div class="w-full flex justify-center  items-center h-screen">
+    <div class="w-full flex justify-center items-center h-screen">
       <div class="w-80 h-80">
         <video
           autoplay
@@ -38,18 +38,27 @@ import ImageLightbox from "../components/ImageLightbox.astro";
           />
         </video>
       </div>
-      <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center animate-bounce opacity-30" style="animation-duration: 3s;">
+      <div
+        class="absolute bottom-0 left-0 right-0 flex justify-center items-center animate-bounce opacity-30"
+        style="animation-duration: 3s;"
+      >
         <a href="#ejemploBlender">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 h-10"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path>
           </svg>
-          
         </a>
       </div>
     </div>
   </div>
 
-  <div class="relative  w-full bg-black bg-pattern" id="ejemploBlender">
+  <div class="relative w-full bg-black bg-pattern scroll-mt-36" id="ejemploBlender">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-1 p-3 mx-auto md:p-0 md:pt-1">
       <div class="aspect-square">
         <ImageLightbox
@@ -93,8 +102,7 @@ import ImageLightbox from "../components/ImageLightbox.astro";
       </div>
 
       <div class="col-span-3">
-        {/* <div class="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full"> */}
-        <ImageLightbox
+        <img
           alt="Ancho de banda de la conciencia "
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1630559191/stn-renders/untitled_i27pcx.jpg"
         />
@@ -204,7 +212,7 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3">
         {/* <div class="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full"> */}
-        <ImageLightbox
+        <img
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629232358/stn-renders/18_ec7kli.jpg"
         />
@@ -233,7 +241,7 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3">
         {/* <div class="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full"> */}
-        <ImageLightbox
+        <img
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629238430/stn-renders/11_vhlp38.jpg"
         />
