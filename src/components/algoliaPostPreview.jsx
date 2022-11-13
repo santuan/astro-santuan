@@ -1,5 +1,5 @@
-import React from "react"
-import { Highlight } from "react-instantsearch-dom"
+import React from "react";
+import { Highlight } from "react-instantsearch-dom";
 const PostPreview = ({ hit }) => {
   return (
     <>
@@ -15,9 +15,10 @@ const PostPreview = ({ hit }) => {
           <div className="flex items-baseline justify-between w-full">
             <a
               rel="noopener noreferrer"
-              href={hit.url}
+              href={`https://www.cooparaje.com.ar/recursos/${hit.slug}`}
+              
               target="_blank"
-              className="block w-full font-mono text-2xl font-bold text-left text-yellow-500 duration-700 group-hover:opacity-100 "
+              className="block w-full font-mono text-2xl font-bold text-left text-yellow-500 duration-700 group-hover:opacity-100 hover:text-white "
             >
               {hit.title}
             </a>
@@ -26,18 +27,30 @@ const PostPreview = ({ hit }) => {
             <Highlight hit={hit} attribute="excerpt.excerpt" tagName="mark" />
           </p>
           <a
-              rel="noopener noreferrer"
-              href={`https://www.cooparaje.com.ar/recursos/${hit.slug}`}
-              
-              target="_blank"
-              className="absolute bottom-0 right-0 z-50 block m-6 text-2xl font-bold text-left text-yellow-500 duration-700 group-hover:opacity-100 "
+            rel="noopener noreferrer"
+            href={hit.url}
+            target="_blank"
+            className="absolute bottom-0 right-0 z-50 block m-6 text-2xl font-bold text-left text-yellow-500 duration-700 group-hover:opacity-100 hover:bg-gray-800/80 p-3 rounded-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
             >
--
-            </a>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PostPreview
+export default PostPreview;

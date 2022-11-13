@@ -17,7 +17,7 @@ export default function RecursosPage() {
           <InstantSearch searchClient={searchClient} indexName="recursos">
             <Draggable handle=".handle" defaultPosition={{ x: 50, y: 50 }} position={null} bounds=".dragArea" scale={1}>
               <div className="z-[1000] fixed bg-gray-900 left-0 top-24 w-80 group">
-                <div className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing active:text-gray-900">
+                <div className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900">
                   <div className="flex items-center justify-start w-full text-left">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export default function RecursosPage() {
                     <span>Buscador</span>
                   </div>
                   <button
-                    className="px-2 cursor-pointer relative z-50 hover:bg-gray-800/20"
+                    className="px-2 cursor-pointer relative z-[1001] hover:bg-gray-800/20"
                     onClick={() => setSerchVisible(!isSearchVisible)}
                   >
                     <svg
@@ -50,7 +50,7 @@ export default function RecursosPage() {
                 <div
                   className={`${
                     isSearchVisible ? "hidden select-none" : "flex"
-                  } flex-col items-center justify-center w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20`}
+                  } flex-col items-center justify-center w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl  group-hover:shadow-amber-600/20`}
                 >
                   <div className="w-full pt-0">
                     <div className="w-full p-2 mx-auto ">
