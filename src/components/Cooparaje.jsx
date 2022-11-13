@@ -15,9 +15,96 @@ export default function RecursosPage() {
         <div className="fixed hidden md:block inset-0 p-2  pt-20 min-h-[90vh] dragArea"></div>
         <div className="relative z-50 flex flex-col items-center justify-center w-full min-h-screen px-2 py-12 mx-auto overflow-hidden ">
           <InstantSearch searchClient={searchClient} indexName="recursos">
+            <div className="z-[1000] fixed block md:hidden bg-gray-900 left-5 top-24 w-80 rounded-lg overflow-hidden group">
+              <div className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900">
+                <div className="flex items-center h-8 justify-start w-full text-left">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-5 h-5 mr-1"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                  </svg>
+                  <span>Buscador</span>
+                </div>
+                <button
+                  className="px-2 cursor-pointer relative z-[1001] hover:bg-gray-800/20"
+                  onClick={() => setSerchVisible(!isSearchVisible)}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </button>
+              </div>
+              <div
+                className={`${
+                  isSearchVisible ? "hidden select-none" : "flex"
+                } flex-col items-center justify-center w-full mx-auto transition-shadow duration-300 bg-gray-900 shadow-xl  group-hover:shadow-amber-600/20`}
+              >
+                <div className="w-full pt-0">
+                  <div className="w-full p-2 mx-auto ">
+                    <div className="w-full">
+                      <SearchBox
+                        className="w-full pt-2 mx-auto mb-2"
+                        showLoadingIndicator
+                        translations={{
+                          submitTitle: "Add your search query.",
+                          resetTitle: "Reset your search query.",
+                          placeholder: "Buscar aquí",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center justify-center w-full mx-auto">
+                  <div className="w-full pt-0">
+                    <ResizableBox
+                      width={320}
+                      height={450}
+                      minConstraints={[320, 300]}
+                      maxConstraints={[320, 700]}
+                      handle={
+                        <div className="fixed bottom-0 left-0 right-0 p-2 duration-300 bg-gradient-to-b from-transparent to-gray-900 hover:opacity-30 cursor-n-resize">
+                          <div className="w-32 h-1 mx-auto bg-white rounded-full"></div>
+                        </div>
+                      }
+                      className="overflow-y-auto relative max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20"
+                    >
+                      <div className="w-full px-2 pt-3 pb-8 mx-auto ">
+                        <RefinementList
+                          attribute="espacio.title"
+                          showMore={true}
+                          operator="and"
+                          showMoreLimit={60}
+                          translations={{
+                            showMore(expanded) {
+                              return expanded ? "Mostrar menos" : "Mostrar más";
+                            },
+                            noResults: "Sin resultados",
+                            submitTitle: "Iniciar búsqueda",
+                            resetTitle: "Reiniciar búsqueda",
+                            placeholder: "Buscador",
+                          }}
+                        />
+                      </div>
+                    </ResizableBox>
+                  </div>
+                </div>
+              </div>
+            </div>
             <Draggable handle=".handle" defaultPosition={{ x: 50, y: 50 }} position={null} bounds=".dragArea" scale={1}>
-              <div className="z-[1000] fixed bg-gray-900 left-0 top-24 w-80 group">
-                <div className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900">
+              <div className="z-[1000] fixed md:block hidden bg-gray-900  left-5 top-24 w-80 rounded-lg overflow-hidden group">
+                <div className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle h-8 hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900">
                   <div className="flex items-center justify-start w-full text-left">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
