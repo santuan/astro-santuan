@@ -21,6 +21,9 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Diseño y software libre" />
     <title>{title}</title>
+    <script>
+      import "../scripts/router.js";
+    </script>
   </head>
   <body>
     <LogoAnim client:visible />
@@ -42,6 +45,10 @@ const { title } = Astro.props;
   }
   .font-mono {
     font-variant-ligatures: none;
+  }
+
+  .turbo-progress-bar {
+    @apply bg-gray-900 dark:bg-white;
   }
 
   *::-webkit-scrollbar {

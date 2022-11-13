@@ -16,6 +16,7 @@
     "@fontsource/vollkorn-sc": "4.5.11",
     "@fontsource/yeseva-one": "4.5.10",
     "@astrojs/react": "^1.2.2",
+    "@hotwired/turbo": "^7.2.0",
     "@astrojs/solid-js": "^1.2.2",
     "@astrojs/svelte": "^1.0.2",
     "@astrojs/tailwind": "^2.1.2",
