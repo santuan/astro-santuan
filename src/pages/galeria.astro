@@ -15,7 +15,7 @@ import ImageLightbox from "../components/ImageLightbox.astro";
       Realizados en Blender
     </a>
     <a href="/recursos" class="fixed right-0 z-[888] btn top-0 yellow !text-xs m-2"> Ver recursos</a>
-    <div class="w-full flex justify-center items-center h-screen">
+    <div class="w-full flex justify-center  items-center h-screen">
       <div class="w-80 h-80">
         <video
           autoplay
@@ -38,10 +38,18 @@ import ImageLightbox from "../components/ImageLightbox.astro";
           />
         </video>
       </div>
+      <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center animate-bounce opacity-30" style="animation-duration: 3s;">
+        <a href="#ejemploBlender">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+          </svg>
+          
+        </a>
+      </div>
     </div>
   </div>
 
-  <div class="relative z-20 w-full bg-black bg-pattern" id="ejemploBlender">
+  <div class="relative  w-full bg-black bg-pattern" id="ejemploBlender">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-1 p-3 mx-auto md:p-0 md:pt-1">
       <div class="aspect-square">
         <ImageLightbox
@@ -141,28 +149,24 @@ import ImageLightbox from "../components/ImageLightbox.astro";
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629215360/stn-renders/k_vjbeow.jpg"
         />
       </div>
-
       <div class="aspect-square">
         <ImageLightbox
           alt="Ancho de banda de la conciencia "
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629233211/stn-renders/k3_arwhkt.jpg"
         />
       </div>
-
       <div class="aspect-square">
         <ImageLightbox
           alt="Ancho de banda de la conciencia "
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629233248/stn-renders/k5_nzy74z.jpg"
         />
       </div>
-
       <div class="aspect-square">
         <ImageLightbox
           alt="Ancho de banda de la conciencia "
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1630556711/stn-renders/03_m7w1gy.jpg"
         />
       </div>
-
       <div class="aspect-square">
         <ImageLightbox
           alt="Ancho de banda de la conciencia "
@@ -179,11 +183,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3 md:col-span-1">
         <ImageLightbox
-          loading="lazy"
-          height="864"
-          width="1536"
-          title="item"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629215725/stn-renders/12_vddpy4.jpg"
         />
@@ -191,11 +190,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3 md:col-span-1">
         <ImageLightbox
-          loading="lazy"
-          height="864"
-          width="1536"
-          title="item"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629232392/stn-renders/14_bmzdy6.jpg"
         />
@@ -203,11 +197,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3 md:col-span-1">
         <ImageLightbox
-          loading="lazy"
-          height="864"
-          width="1536"
-          title="item"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629232389/stn-renders/13_vrxkt2.jpg"
         />
@@ -216,11 +205,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
       <div class="col-span-3">
         {/* <div class="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full"> */}
         <ImageLightbox
-          loading="lazy"
-          height="864"
-          width="1536"
-          title="item"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629232358/stn-renders/18_ec7kli.jpg"
         />
@@ -228,11 +212,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3 md:col-span-1">
         <ImageLightbox
-          loading="lazy"
-          title="item"
-          height="864"
-          width="1536"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629233952/stn-renders/04_rhcw2f.jpg"
         />
@@ -240,11 +219,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3 md:col-span-1">
         <ImageLightbox
-          loading="lazy"
-          title="item"
-          height="864"
-          width="1536"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629215823/stn-renders/02_blemta.jpg"
         />
@@ -252,11 +226,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
 
       <div class="col-span-3 md:col-span-1">
         <ImageLightbox
-          loading="lazy"
-          title="item"
-          height="864"
-          width="1536"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629233957/stn-renders/01_ujdfvc.jpg"
         />
@@ -265,11 +234,6 @@ import ImageLightbox from "../components/ImageLightbox.astro";
       <div class="col-span-3">
         {/* <div class="relative w-auto h-auto col-span-3 cursor-pointer md:w-full md:h-full"> */}
         <ImageLightbox
-          loading="lazy"
-          height="864"
-          width="1536"
-          title="item"
-          class="object-cover w-auto h-auto duration-200 md:w-full md:h-full hover:opacity-60"
           alt="item"
           src="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629238430/stn-renders/11_vhlp38.jpg"
         />

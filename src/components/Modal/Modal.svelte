@@ -39,7 +39,7 @@
 
 <svelte:window on:keydown={handle_keydown} />
 
-<!-- <svelte:head>
+<svelte:head>
   {#if modal}
     <style>
       body {
@@ -47,7 +47,7 @@
       }
     </style>
   {/if}
-</svelte:head> -->
+</svelte:head>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="modal-background" on:click={close} transition:fade />
