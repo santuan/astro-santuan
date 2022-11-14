@@ -1,18 +1,18 @@
 ---
 import ImageLightbox from "@/components/ImageLightbox.astro";
+import CarouselSection from "@/components/Lab/LabDalle/Carousel/CarouselSection.astro";
 import CompareSection from "@/components/Lab/LabDalle/Compare/CompareSection.astro";
-import MenuDropdownPages from "@/components/Lab/LabDalle/headlessui/MenuDropdownPages.jsx";
+import MenuDropdownPages from "@/components/Lab/LabDalle/MenuDropdownPages.jsx";
 import Intro from "@/components/Lab/LabDalle/Intro/Intro.astro";
-import LabDalle from "@/components/Lab/LabDalle/LabDalle.jsx";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="DallE">
-  <MenuDropdownPages client:load />
+  <MenuDropdownPages client:idle />
   <div  class="flex flex-col justify-end w-full min-h-screen mx-auto text-center text-white bg-indigo-900">
     <Intro />
     <CompareSection />
-    <LabDalle client:load />
+    <CarouselSection/>
     <div
       class="grid grid-cols-2 gap-1 p-1 from-yellow-400 bg-gradient-to-b via-yellow-500 to-gray-900 scroll-mt-24 md:grid-cols-3"
       id="ejemplo4"

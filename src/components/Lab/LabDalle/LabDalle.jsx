@@ -4,7 +4,6 @@ import Carousel01 from "@/components/Lab/LabDalle/Carousel/Carousel01.jsx";
 import Carousel02 from "@/components/Lab/LabDalle/Carousel/Carousel02.jsx";
 import Carousel03 from "@/components/Lab/LabDalle/Carousel/Carousel03.jsx";
 import Carousel04 from "@/components/Lab/LabDalle/Carousel/Carousel04.jsx";
-import MenuDropdownPages from "@/components/Lab/LabDalle/headlessui/MenuDropdownPages.jsx";
 import CarouselTokenOne from "@/components/Lab/LabDalle/Carousel/EmblaCarouselDalleTokenOne.jsx";
 import CarouselTokenThree from "@/components/Lab/LabDalle/Carousel/EmblaCarouselDalleTokenThree.jsx";
 import CarouselTokenTwo from "@/components/Lab/LabDalle/Carousel/EmblaCarouselDalleTokenTwo.jsx";

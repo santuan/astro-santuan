@@ -1,0 +1,77 @@
+---
+import { Img } from "astro-imagetools/components";
+import './Swiper.css';
+
+---
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://res.cloudinary.com/srcouto/image/upload/v1654060071/santuan/tokens/3/DALL_E_2022-05-29_10.21.58_iiejdg.png"
+        width={500}
+        height={500}
+      />
+    </div>
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://res.cloudinary.com/srcouto/image/upload/v1654060036/santuan/tokens/3/DALL_E_2022-05-29_10.21.52_mv1nll.png"
+        width={500}
+        height={500}
+      />
+    </div>
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://res.cloudinary.com/srcouto/image/upload/v1654060065/santuan/tokens/3/DALL_E_2022-05-29_10.22.11_ly3yfn.png"
+        width={500}
+        height={500}
+      />
+    </div>
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://res.cloudinary.com/srcouto/image/upload/v1654060077/santuan/tokens/3/DALL_E_2022-05-29_10.22.06_y8xs3x.png"
+        width={500}
+        height={500}
+      />
+    </div>
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://res.cloudinary.com/srcouto/image/upload/v1654060064/santuan/tokens/3/DALL_E_2022-05-29_10.21.27_dkjkao.png"
+        width={500}
+        height={500}
+      />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  import Swiper, { Navigation, Pagination } from "swiper";
+  import "swiper/css";
+
+  var swiper = new Swiper(".mySwiper", {
+    modules: [Navigation, Pagination],
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 500,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+</script>

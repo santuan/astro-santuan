@@ -1,0 +1,69 @@
+---
+import { Img } from "astro-imagetools/components";
+import './Swiper.css';
+
+---
+
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://santuan.netlify.app/static/ac405f51e282c9d3833cce9f02445845/97763/DALL_E_2022-05-29_17.38.22_kcx7sw.webp"
+        width={500}
+        height={500}
+      />
+    </div>
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://santuan.netlify.app/static/b1a3b5a84c8261878d7c1d844a97cfc7/97763/DALL_E_2022-05-29_17.38.13_kwe3bj.webp"
+        width={500}
+        height={500}
+      />
+    </div>
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://santuan.netlify.app/static/e3a7a9006dff503ab32f8b5df929f15d/97763/DALL_E_2022-05-29_17.38.19_uzkkqn.webp"
+        width={500}
+        height={500}
+      />
+    </div>
+    <div class="swiper-slide">
+      <Img
+        alt="Variacion Dall-E"
+        src="https://santuan.netlify.app/static/df485763fc6f43869f35ac0a8936e703/97763/DALL_E_2022-05-29_17.39.23_undjh0.webp"
+        width={500}
+        height={500}
+      />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  import Swiper, { Navigation, Pagination } from "swiper";
+  import "swiper/css";
+
+  var swiper = new Swiper(".mySwiper", {
+    modules: [Navigation, Pagination],
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 500,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+</script>
