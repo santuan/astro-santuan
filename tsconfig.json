@@ -13,6 +13,9 @@
       "@/styles/*": [
         "src/styles/*"
       ],
+      "@/src/*": [
+        "src/*"
+      ],
     },
     "jsxImportSource": "solid-js"
   }
