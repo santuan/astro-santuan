@@ -3,7 +3,7 @@ import { Img } from "astro-imagetools/components";
 import "@/styles/Swiper.css";
 ---
 
-<div class="swiper mySwiper01">
+<div class="swiper" id="mySwiper01">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <Img
@@ -48,7 +48,7 @@ import "@/styles/Swiper.css";
   import Swiper, { Navigation, Pagination } from "swiper";
   import "swiper/css";
 
-  new Swiper(".mySwiper01", {
+  const swiper = new Swiper("#mySwiper01", {
     modules: [Navigation, Pagination],
     loop: true,
     autoplay: {
@@ -65,4 +65,3 @@ import "@/styles/Swiper.css";
     },
   });
 </script>
-
