@@ -3,7 +3,8 @@ import BackCarousel from "@/components/Lab/LabDalle/Carousel/BackCarousel.jsx";
 ---
 
 <div
-  class="relative flex flex-col items-center justify-center w-full min-h-screen pb-6 mx-auto overflow-hidden bg-gray-900/50 bg-opacity-30 bg-gradient-to-b from-transparent via-transparent to-red-600" id="intro"
+  class="relative flex flex-col items-center justify-center w-full min-h-screen pb-6 mx-auto overflow-hidden bg-gray-900/50 bg-opacity-30 bg-gradient-to-b from-transparent via-transparent to-red-600"
+  id="intro"
 >
   <h3
     class="relative z-10 flex items-center justify-center w-full px-4 mx-auto font-serif text-lg text-left md:text-3xl group max-w-7xl md:px-12"
@@ -34,17 +35,17 @@ import BackCarousel from "@/components/Lab/LabDalle/Carousel/BackCarousel.jsx";
   </p>
   <a href="#ejemplo1" aria-label="Ir al primer ejemplo" class="z-10 flex items-center justify-center">
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
       stroke="currentColor"
-      class="w-6 h-6 text-3xl animate-pulse"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      fill="currentColor"
+      stroke-width="0"
+      viewBox="0 0 16 16"
+      class="text-3xl animate-pulse"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+      ><path
+        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"
+      ></path>
     </svg>
   </a>
   <BackCarousel client:load />

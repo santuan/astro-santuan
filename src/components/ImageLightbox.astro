@@ -4,7 +4,17 @@ const { alt, src, width, height } = Astro.props;
 import { Img } from "astro-imagetools/components";
 ---
 
-<div class="relative" >
-  <Img alt={alt} src={src} width={width} height={height} />
+<div class="relative">
+  <Img
+    alt={alt}
+    src={src}
+    width={width}
+    height={height}
+    loading="lazy"
+    decoding="async"
+    layout="fixed"
+    placeholder="blurred"
+    format="webp"
+  />
   <Lightbox client:visible alt={alt} src={src} />
 </div>

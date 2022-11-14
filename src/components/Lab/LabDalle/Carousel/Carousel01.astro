@@ -1,10 +1,9 @@
 ---
 import { Img } from "astro-imagetools/components";
-import './Swiper.css';
-
+import "./Swiper.css";
 ---
 
-<div class="swiper mySwiper">
+<div class="swiper mySwiper01">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <Img
@@ -48,22 +47,20 @@ import './Swiper.css';
   import Swiper, { Navigation, Pagination } from "swiper";
   import "swiper/css";
 
-  var swiper = new Swiper(".mySwiper", {
+  let swiper = new Swiper(".mySwiper01", {
     modules: [Navigation, Pagination],
+    loop: true,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
-    speed: 500,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      type: 'bullets',
-      clickable: true,
     },
   });
 </script>
