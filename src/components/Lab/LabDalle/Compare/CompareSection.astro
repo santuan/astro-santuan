@@ -1,5 +1,8 @@
 ---
-import CompareImage from "@/components/Lab/LabDalle/Compare/CompareImage.svelte";
+import CompareImage1 from "@/components/Lab/LabDalle/Compare/CompareImage01.svelte";
+import CompareImage2 from "@/components/Lab/LabDalle/Compare/CompareImage02.svelte";
+import CompareImage3 from "@/components/Lab/LabDalle/Compare/CompareImage03.svelte";
+import CompareImage4 from "@/components/Lab/LabDalle/Compare/CompareImage04.svelte";
 ---
 
 <div
@@ -21,26 +24,26 @@ import CompareImage from "@/components/Lab/LabDalle/Compare/CompareImage.svelte"
       </p>
     </div>
   </div>
-  <div class="grid w-full max-w-xl gap-12 px-2 py-12 mx-auto">
+  <div class="grid w-full max-w-xl gap-16 px-8 md:px-2 py-12 mx-auto">
     <div class="relative max-w-lg overflow-hidden rounded-br-none rounded-2xl">
       <div class="relative z-10 w-full mx-auto overflow-hidden font-mono text-xs font-bold compareImage">
-        <CompareImage client:load />
+        <CompareImage1 client:load />
       </div>
     </div>
     <div class="relative max-w-lg overflow-hidden rounded-br-none rounded-2xl">
       <div class="relative z-10 w-full mx-auto overflow-hidden font-mono text-xs font-bold compareImage">
-        <CompareImage client:load />
+        <CompareImage2 client:load />
       </div>
     </div>
 
     <div class="relative max-w-lg overflow-hidden rounded-br-none rounded-2xl">
       <div class="relative z-10 w-full mx-auto overflow-hidden font-mono text-xs font-bold compareImage">
-        <CompareImage client:load />
+        <CompareImage3 client:load />
       </div>
     </div>
     <div class="relative max-w-lg overflow-hidden rounded-br-none rounded-2xl">
       <div class="relative z-10 w-full mx-auto overflow-hidden font-mono text-xs font-bold compareImage">
-        <CompareImage client:load />
+        <CompareImage4 client:load />
       </div>
     </div>
   </div>
