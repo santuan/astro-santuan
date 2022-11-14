@@ -43,18 +43,26 @@ import "@/styles/Swiper.css";
   <div class="swiper-pagination"></div>
 </div>
 
-<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script is:inline>
+
+<script>
+  import Swiper, { Navigation, Pagination } from "swiper";
+  import "swiper/css";
+
   new Swiper(".mySwiper01", {
-    // Optional parameters
-    // If we need pagination
+    modules: [Navigation, Pagination],
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
-    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
 </script>
+
