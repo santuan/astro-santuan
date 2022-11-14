@@ -26,9 +26,9 @@ const WelcomeStnCompoent = () => {
             <path d="M0,0 L250,0 L250,218 L0,218z"></path>
           </clipPath>
         </defs>
-        <g clip-path="url(#__lottie_element_2)">
-          <g clip-path="url(#__lottie_element_57)" transform="matrix(1,0,0,1,-11,18)" opacity="1" class="block">
-            <g transform="matrix(1,0,0,1,22.730995178222656,9.6719970703125)" opacity="1" class="block">
+        <g clipPath="url(#__lottie_element_2)">
+          <g clipPath="url(#__lottie_element_57)" transform="matrix(1,0,0,1,-11,18)" opacity="1" className="block">
+            <g transform="matrix(1,0,0,1,22.730995178222656,9.6719970703125)" opacity="1" className="block">
               <g opacity="1" transform="matrix(1,0,0,1,102.25900268554688,102.28900146484375)">
                 <path
                   fill="rgb(47,133,192)"
@@ -40,7 +40,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(1,0,0,1.1225652694702148,22.711997985839844,45.62461853027344)"
               opacity="1"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,102.2249984741211,59.09000015258789)">
                 <path
@@ -53,7 +53,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(0.9410753846168518,0,0,0.9410753846168518,81.42439270019531,68.35527038574219)"
               opacity="1"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,46.2859992980957,46.334999084472656)">
                 <path
@@ -66,7 +66,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(1.3437269926071167,0,0,1.3437269926071167,104.49075317382812,91.4708480834961)"
               opacity="1"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,15.256999969482422,15.248000144958496)">
                 <path
@@ -77,8 +77,8 @@ const WelcomeStnCompoent = () => {
               </g>
             </g>
           </g>
-          <g clip-path="url(#__lottie_element_29)" transform="matrix(1,0,0,1,213,18)" opacity="1" class="block">
-            <g transform="matrix(1,0,0,1,29.130996704101562,15.721000671386719)" opacity="1" class="block">
+          <g clipPath="url(#__lottie_element_29)" transform="matrix(1,0,0,1,213,18)" opacity="1" className="block">
+            <g transform="matrix(1,0,0,1,29.130996704101562,15.721000671386719)" opacity="1" className="block">
               <g opacity="1" transform="matrix(1,0,0,1,95.87000274658203,95.87000274658203)">
                 <path
                   fill="rgb(231,68,70)"
@@ -87,7 +87,7 @@ const WelcomeStnCompoent = () => {
                 ></path>
               </g>
             </g>
-            <g transform="matrix(1,0,0,1,10.331001281738281,-3.0789947509765625)" opacity="1" class="block">
+            <g transform="matrix(1,0,0,1,10.331001281738281,-3.0789947509765625)" opacity="1" className="block">
               <g opacity="1" transform="matrix(1,0,0,1,114.66999816894531,114.66999816894531)">
                 <path
                   strokeLinecap="butt"
@@ -101,7 +101,7 @@ const WelcomeStnCompoent = () => {
                 ></path>
               </g>
             </g>
-            <g transform="matrix(1,0,0,1,149.83985900878906,109)" opacity="1" class="block">
+            <g transform="matrix(1,0,0,1,149.83985900878906,109)" opacity="1" className="block">
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
                   strokeLinecap="butt"
@@ -115,7 +115,7 @@ const WelcomeStnCompoent = () => {
                 ></path>
               </g>
             </g>
-            <g transform="matrix(1.3081074953079224,0,0,1,154.5783233642578,109)" opacity="1" class="block">
+            <g transform="matrix(1.3081074953079224,0,0,1,154.5783233642578,109)" opacity="1" className="block">
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
                   strokeLinecap="butt"
@@ -132,7 +132,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(0.7716014385223389,0,0,1,146.69786071777344,141.97659301757812)"
               opacity="1"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
@@ -147,7 +147,7 @@ const WelcomeStnCompoent = () => {
                 ></path>
               </g>
             </g>
-            <g transform="matrix(0.7616013884544373,0,0,1,147.64785766601562,109)" opacity="1" class="block">
+            <g transform="matrix(0.7616013884544373,0,0,1,147.64785766601562,109)" opacity="1" className="block">
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
                   strokeLinecap="butt"
@@ -164,7 +164,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(1,0,0,0.6502770185470581,111.01214599609375,143.62257385253906)"
               opacity="1"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
@@ -182,7 +182,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(1,0,0,0.6205078363418579,110.01301574707031,146.56973266601562)"
               opacity="1"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
@@ -198,8 +198,8 @@ const WelcomeStnCompoent = () => {
               </g>
             </g>
           </g>
-          <g clip-path="url(#__lottie_element_4)" transform="matrix(1,0,0,1,446,18)" opacity="1" class="block">
-            <g transform="matrix(1,0,0,1,6.721000671386719,7.0839996337890625)" opacity="1" class="block">
+          <g clipPath="url(#__lottie_element_4)" transform="matrix(1,0,0,1,446,18)" opacity="1" className="block">
+            <g transform="matrix(1,0,0,1,6.721000671386719,7.0839996337890625)" opacity="1" className="block">
               <g opacity="1" transform="matrix(1,0,0,1,117.33899688720703,102.10099792480469)">
                 <path
                   fill="rgb(248,230,81)"
@@ -211,7 +211,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(1.075345516204834,0,0,1.075345516204834,27.20147705078125,42.53257751464844)"
               opacity="0.8872629396401397"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,90.0719985961914,78.4739990234375)">
                 <path
@@ -224,7 +224,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(0.8598766326904297,0,0,0.8598766326904297,46.60919189453125,76.2958984375)"
               opacity="0.9647613792499826"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,90.0719985961914,78.4739990234375)">
                 <path
@@ -237,7 +237,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(0.9948887825012207,0,0,0.9948887825012207,65.5045166015625,109.15043640136719)"
               opacity="0.9226138804614064"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,58.79499816894531,51.33000183105469)">
                 <path
@@ -250,7 +250,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(1.3793671131134033,0,0,1.3793671131134033,42.89911651611328,69.77601623535156)"
               opacity="0.9998721589310275"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,58.79499816894531,51.33000183105469)">
                 <path
@@ -263,7 +263,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(0.4888685941696167,0,0,0.4888685941696167,108.67774963378906,184.13307189941406)"
               opacity="0.47376683807027226"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,31.46500015258789,27.641000747680664)">
                 <path
@@ -276,7 +276,7 @@ const WelcomeStnCompoent = () => {
             <g
               transform="matrix(1.4527472257614136,0,0,1.4527472257614136,78.34930419921875,131.08987426757812)"
               opacity="0.8754979021657083"
-              class="block"
+              className="block"
             >
               <g opacity="1" transform="matrix(1,0,0,1,31.46500015258789,27.641000747680664)">
                 <path
