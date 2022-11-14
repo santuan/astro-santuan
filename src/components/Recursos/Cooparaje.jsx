@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import algoliasearch from "algoliasearch/lite";
 import Draggable from "react-draggable";
 import { Hits, InstantSearch, SearchBox, RefinementList, ClearRefinements } from "react-instantsearch-dom";
-import PostPreview from "./algoliaPostPreview";
+import PostPreview from "./RecursosPostPreview";
 
 const searchClient = algoliasearch("K8WTAMXCZT", "91627040f2b233f6958fdbdbe2b6193d");
 
@@ -149,9 +149,9 @@ export default function RecursosPage() {
                     <div className="w-full pt-0">
                       <ResizableBox
                         width={320}
-                        height={450}
-                        minConstraints={[320, 300]}
-                        maxConstraints={[320, 700]}
+                        height={250}
+                        minConstraints={[320, 250]}
+                        maxConstraints={[320, 500]}
                         handle={
                           <div className="fixed bottom-0 left-0 right-0 p-2 duration-300 bg-gradient-to-b from-transparent to-gray-900 hover:opacity-30 cursor-n-resize">
                             <div className="w-32 h-1 mx-auto bg-white rounded-full"></div>

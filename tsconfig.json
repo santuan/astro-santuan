@@ -10,6 +10,9 @@
       "@/layouts/*": [
         "src/layouts/*"
       ],
+      "@/styles/*": [
+        "src/styles/*"
+      ],
     },
     "jsxImportSource": "solid-js"
   }

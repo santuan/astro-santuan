@@ -2,8 +2,8 @@
   import Modal from "./Modal.svelte";
 
   let showModal = false;
-  export let alt;
-  export let src;
+  // export let alt;
+  // export let src;
 </script>
 
 <button
@@ -30,6 +30,7 @@
 
 {#if showModal}
   <Modal on:close={() => (showModal = false)}>
-    <img src={src} alt={alt} />
+    <!-- <img src={src} alt={alt} /> -->
+    <slot/>
   </Modal>
 {/if}

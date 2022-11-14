@@ -1,0 +1,70 @@
+---
+import Carousel01 from "@/components/Lab/LabDalle/Variations/Carousel01.astro";
+import Carousel02 from "@/components/Lab/LabDalle/Variations/Carousel02.astro";
+import Carousel03 from "@/components/Lab/LabDalle/Variations/Carousel03.astro";
+import Carousel04 from "@/components/Lab/LabDalle/Variations/Carousel04.astro";
+---
+
+<div
+  id="ejemplo3"
+  class="relative grid w-full px-6 pb-64 mx-auto scroll-mt-10 bg-gray-900/50 bg-opacity-30 bg-gradient-to-b from-amber-600 via-amber-600 to-yellow-400"
+>
+  <div class="max-w-xl px-6 pt-12 mx-auto">
+    <div
+      class="flex flex-col items-center justify-center w-full px-3 pt-24 pb-6 font-serif text-xl text-center md:text-3xl"
+    >
+      <small
+        class="w-24 px-2 py-1 mb-3 font-mono text-xs font-medium text-center uppercase rounded-md shadow bg-gray-900/20"
+      >
+        Ejemplo 3
+      </small>
+      Variaciones de una secuencia de palabras, multiples maneras de percibirlas.
+    </div>
+  </div>
+  <div class="grid w-full max-w-6xl gap-3 mx-auto md:grid-cols-1 lg:grid-cols-2">
+    <div
+      class="relative grid grid-cols-2 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl"
+    >
+      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80">
+        <p class="w-full font-serif text-lg font-bold text-left md:text-2xl">En un castillo flotando en el cielo</p>
+      </div>
+      <div class="max-w-sm">
+        <Carousel01 />
+      </div>
+    </div>
+    <div
+      class="relative grid grid-cols-2 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl"
+    >
+      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80">
+        <p class="w-full font-serif text-lg font-bold text-left md:text-2xl">Dos roedores disfrutaban una taza de té junto al fuego del hogar.</p>
+      </div>
+      <div class="max-w-sm">
+        <Carousel02 />
+      </div>
+    </div>
+    <div
+      class="relative grid grid-cols-2 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl"
+    >
+      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80">
+        <p class="w-full font-serif text-lg font-bold text-left md:text-2xl">
+          <span class="font-normal opacity-80">y mientras caía</span> <br/> un conejo en paracaidas con una zanahoria.
+        </p>
+      </div>
+      <div class="max-w-sm">
+        <Carousel03 />
+      </div>
+    </div>
+    <div
+      class="relative grid grid-cols-2 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl"
+    >
+      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80">
+        <p class="w-full font-serif text-lg font-bold text-left md:text-2xl">
+          Un rey conejo.  <span class="font-normal opacity-80">lo estaba esperando</span>
+        </p>
+      </div>
+      <div class="max-w-sm">
+        <Carousel04/>
+      </div>
+    </div>
+  </div>
+</div>

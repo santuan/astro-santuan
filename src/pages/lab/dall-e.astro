@@ -1,10 +1,11 @@
 ---
-import ImageLightbox from "@/components/ImageLightbox.astro";
+import ImageLightbox from "@/components/ImageLightbox/ImageLightbox.astro";
 import CarouselSection from "@/components/Lab/LabDalle/Carousel/CarouselSection.astro";
 import CompareSection from "@/components/Lab/LabDalle/Compare/CompareSection.astro";
 import MenuDropdownPages from "@/components/Lab/LabDalle/MenuDropdownPages.jsx";
 import Intro from "@/components/Lab/LabDalle/Intro/Intro.astro";
 import Layout from "@/layouts/Layout.astro";
+import VariationsSection from "@/components/Lab/LabDalle/Variations/VariationsSection.astro";
 ---
 
 <Layout title="DallE">
@@ -13,6 +14,7 @@ import Layout from "@/layouts/Layout.astro";
     <Intro />
     <CompareSection />
     <CarouselSection />
+    <VariationsSection/>
     <div
       class="grid grid-cols-2 gap-1 p-1 from-yellow-400 bg-gradient-to-b via-yellow-500 to-gray-900 scroll-mt-24 md:grid-cols-3"
       id="ejemplo4"
