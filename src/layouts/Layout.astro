@@ -13,7 +13,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "@/src/config";
     </script>
   </head>
   <body>
-    <Logo client:visible />
+    <div data-turbo-permanent id="logo">
+      <Logo client:visible />
+    </div>
+    <div data-turbo-permanent id="resourses">
+      <a href="/recursos" class="fixed right-0 z-[888] btn top-0 blue !text-xs m-2"> Ver recursos</a>
+    </div>
     <slot />
   </body>
 </html>

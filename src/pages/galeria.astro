@@ -6,8 +6,9 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Galeria">
   <!-- <Galeria client:visible /> -->
   <div class="w-full p-3 mx-auto bg-black">
-    <a href="/recursos" class="fixed right-0 z-[888] btn top-0 yellow !text-xs m-2"> Ver recursos</a>
-    <a href="/lab/dall-e" class="fixed right-0 z-[888] btn top-12 red !text-xs m-2">DALL·E·2</a>
+    <div class="fixed right-0 left-0 z-50 flex justify-center top-0">
+      <a href="/lab/dall-e" class="btn red !text-xs m-2">DALL·E·2</a>
+    </div>
     <div class="w-full flex justify-center items-center h-screen">
       <div class="md:w-[30vw] aspect-square object-cover">
         <video

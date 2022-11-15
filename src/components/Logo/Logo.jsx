@@ -10,7 +10,7 @@ const WelcomeStnCompoent = () => {
         height="250"
         preserveAspectRatio="xMidYMid meet"
         className='-z-10 absolute'
-        style={{ width: 100, height: 60 }}
+        style={{ width: 150, height: 80 }}
       >
         <defs>
           <clipPath id="__lottie_element_2">
