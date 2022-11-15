@@ -6,12 +6,11 @@ import CompareImage4 from "@/components/Lab/LabDalle/Compare/CompareImage04.svel
 ---
 
 <div
-  id="ejemplo1"
-  class="relative  w-full pb-12 mx-auto scroll-mt-20  bg-gray-900/50 bg-opacity-30 bg-gradient-to-b from-indigo-700 to-red-700"
+  class="relative w-full pb-12 mx-auto scroll-mt-20 bg-gray-900/50 bg-opacity-30 bg-gradient-to-b from-indigo-700 to-red-700"
 >
   <div class="w-full max-w-5xl mx-auto grid xl:grid-cols-2 relative">
     <div class="self-start text-left xl:sticky top-24">
-      <div class="flex flex-col w-full max-w-xl px-8 py-24 pt-24 mx-auto font-mono text-lg md:text-xl">
+      <div id="ejemplo1" class="outline-none flex flex-col w-full max-w-xl px-8 py-24 pt-24 mx-auto font-mono text-lg md:text-xl">
         <small
           class="w-24 px-2 py-1 mb-3 font-mono text-xs font-medium text-center uppercase rounded-md shadow bg-gray-900/20"
         >
@@ -26,7 +25,7 @@ import CompareImage4 from "@/components/Lab/LabDalle/Compare/CompareImage04.svel
       </div>
     </div>
     <div class="grid w-full max-w-xl gap-16 px-8 md:px-2 py-12 mx-auto">
-      <div class="relative max-w-lg overflow-hidden rounded-br-none rounded-2xl">
+      <div  class="relative max-w-lg overflow-hidden rounded-br-none rounded-2xl">
         <div class="relative z-10 w-full mx-auto overflow-hidden font-mono text-xs font-bold compareImage">
           <CompareImage1 client:load />
         </div>
