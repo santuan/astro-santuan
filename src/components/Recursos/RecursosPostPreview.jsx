@@ -47,7 +47,9 @@ const PostPreview = ({ hit }) => {
                 />
               </svg>
             </a>
-            <div className="opacity-0 absolute right-6 top-9 z-0 font-bold w-64 font-mono duration-300 group-hover:opacity-100">Link al recurso</div>
+            <div className="opacity-0 absolute right-6 top-9 z-0 font-bold w-64 font-mono duration-300 group-hover:opacity-100">
+              Link al recurso
+            </div>
           </div>
         </div>
       </div>

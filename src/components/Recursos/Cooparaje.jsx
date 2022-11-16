@@ -19,7 +19,7 @@ export default function RecursosPage() {
         />
         <div className="relative flex flex-col items-center justify-center w-full min-h-screen px-2 py-12 mx-auto overflow-hidden ">
           <InstantSearch searchClient={searchClient} indexName="recursos">
-            <div className="z-[9999] fixed block md:hidden bg-gray-900 left-1 right-1 top-4 w-auto shadow-xl rounded-lg overflow-hidden group">
+            <div className="z-[9999] fixed block md:hidden bg-gray-900 left-1 right-1 top-20 w-auto shadow-xl rounded-lg overflow-hidden group">
               <button
                 onClick={() => setSerchVisible(!isSearchVisible)}
                 className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900"
