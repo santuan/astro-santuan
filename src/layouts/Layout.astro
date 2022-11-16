@@ -2,7 +2,6 @@
 import Logo from "@/components/Logo/LogoAnim.jsx";
 import BaseHead from "@/components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/src/config";
-import { PageTransition } from "astro-page-transition";
 import Offcanvas from "@/components/Offcanvas/Offcanvas.vue";
 import "@fontsource/yeseva-one";
 import "@fontsource/space-mono";
@@ -19,10 +18,9 @@ import "@fontsource/vollkorn-sc";
     </script>
   </head>
   <body>
-    <Offcanvas client:idle />
-    <PageTransition speed={1000} zIndex={99} />
+    <Offcanvas client:load />
     <div data-turbo-permanent id="logo">
-      <Logo client:visible />
+      <Logo client:load />
     </div>
     <main class="flex flex-col w-full relative z-[99]">
       <slot />
