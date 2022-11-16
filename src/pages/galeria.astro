@@ -9,8 +9,8 @@ import Layout from "../layouts/Layout.astro";
     <div class="fixed right-14 z-50 flex justify-center top-3">
       <a href="/lab/dall-e" class="btn red !text-xs m-2">DALL·E·2</a>
     </div>
-    <div class="w-full flex justify-center items-center h-screen">
-      <div class="md:w-[30vw] aspect-square object-cover">
+    <div class="w-full flex justify-center items-center h-screen z-[500]">
+      <div class="md:w-[40vw] aspect-square object-cover">
         <video
           autoplay
           loop
@@ -51,7 +51,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 
-  <div class="relative w-full bg-black bg-pattern scroll-mt-24" >
+  <div class="relative w-full bg-black bg-pattern scroll-mt-24">
     <Gallery />
   </div>
 </Layout>

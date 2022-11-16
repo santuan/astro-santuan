@@ -4,7 +4,6 @@ import algoliasearch from "algoliasearch/lite";
 import Draggable from "react-draggable";
 import { Hits, InstantSearch, SearchBox, RefinementList, ClearRefinements } from "react-instantsearch-dom";
 import PostPreview from "./RecursosPostPreview";
-
 const searchClient = algoliasearch("K8WTAMXCZT", "91627040f2b233f6958fdbdbe2b6193d");
 
 export default function RecursosPage() {
