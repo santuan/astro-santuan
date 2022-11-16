@@ -8,5 +8,8 @@ module.exports = {
 			mono: ["Space Mono", "mono"],
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/line-clamp'),
+	],
 }

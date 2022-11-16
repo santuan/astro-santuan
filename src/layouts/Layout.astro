@@ -3,6 +3,10 @@ import Logo from "@/components/Logo/LogoAnim.jsx";
 import BaseHead from "@/components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/src/config";
 import { PageTransition } from "astro-page-transition";
+import "@fontsource/yeseva-one";
+import "@fontsource/space-mono";
+import "@fontsource/vollkorn";
+import "@fontsource/vollkorn-sc";
 ---
 
 <!DOCTYPE html>
@@ -18,7 +22,7 @@ import { PageTransition } from "astro-page-transition";
     <div data-turbo-permanent id="logo">
       <Logo client:visible />
     </div>
-    <a href="/recursos" class="fixed right-0 z-[98] btn top-2 blue !text-xs m-2"> Ver recursos</a>
+    <a href="/recursos" class="fixed right-0 z-10 btn top-2 blue !text-xs m-2"> Ver recursos</a>
     <main class="flex flex-col w-full">
       <slot />
     </main>

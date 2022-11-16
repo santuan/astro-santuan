@@ -8,32 +8,26 @@ import PostPreview from "./RecursosPostPreview";
 const searchClient = algoliasearch("K8WTAMXCZT", "91627040f2b233f6958fdbdbe2b6193d");
 
 export default function RecursosPage() {
-  const [isSearchVisible, setSerchVisible] = useState(false);
+  const [isSearchVisible, setSerchVisible] = useState(true);
   return (
     <>
       <div className="z-20 flex flex-col items-center justify-center w-full min-h-screen overflow-hidden text-center bg-pattern bg-gray-800 ">
-        <div className="fixed hidden md:block inset-0 p-2  pt-20 min-h-[90vh] dragArea"></div>
-        <div className="relative z-50 flex flex-col items-center justify-center w-full min-h-screen px-2 py-12 mx-auto overflow-hidden ">
+        <div className="fixed hidden md:block inset-0 p-2  pt-32 min-h-[90vh] dragArea"></div>
+        <button
+          className={`${isSearchVisible ? "opacity-0 select-none -z-10" : "opacity-100 z-[51]"} outline-none duration-300 md:hidden fixed inset-0 bg-gray-900/90 backdrop-blur-lg `}
+          onClick={() => setSerchVisible(!isSearchVisible)}
+        />
+        <div className="relative flex flex-col items-center justify-center w-full min-h-screen px-2 py-12 mx-auto overflow-hidden ">
           <InstantSearch searchClient={searchClient} indexName="recursos">
-            <div className="z-[9999] fixed block md:hidden bg-gray-900 left-auto right-2 md:left-4 top-24 w-60 rounded-lg overflow-hidden group">
+            <div className="z-[9999] fixed block md:hidden bg-gray-900 left-1 right-1 top-4 w-auto shadow-xl rounded-lg overflow-hidden group">
               <button
                 onClick={() => setSerchVisible(!isSearchVisible)}
                 className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900"
               >
-                <div className="flex items-center h-8 justify-start w-full text-left">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5 mr-1"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-                  </svg>
+                <div className="flex items-center h-12 justify-end w-full text-left">
                   <span>Encontrador</span>
                 </div>
-                <div className="px-2 cursor-pointer relative flex justify-center items-center z-[1001] h-8 hover:bg-gray-800/20">
+                <div className="px-2 cursor-pointer relative flex justify-center items-center z-[1001] h-12">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -68,9 +62,7 @@ export default function RecursosPage() {
                 </div>
                 <div className="flex flex-col relative items-center justify-center w-full mx-auto">
                   <div className="w-full relative pt-0">
-                    <div
-                      className="overflow-y-auto relative max-h-[320px]  !w-full md:max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20"
-                    >
+                    <div className="overflow-y-auto relative max-h-[400px]  !w-full md:max-h-[650px] rounded-b-xl transition-shadow  duration-300 bg-gray-900 shadow-xl group-hover:shadow-amber-600/20">
                       <div className="w-full px-2  mx-auto ">
                         <RefinementList
                           attribute="espacio.title"
@@ -183,7 +175,7 @@ export default function RecursosPage() {
               </div>
             </Draggable>
 
-            <div className="relative mx-auto pt-4 w-96 ">
+            <div className="relative mx-auto z-10 pt-24 md:pt-4 w-full md:w-96 ">
               <Hits className="w-full mx-auto" hitComponent={PostPreview} />
               <div className="fixed bottom-0 m-2 left-0 flex z-[999]  items-center justify-center">
                 <ClearRefinements

@@ -46,6 +46,8 @@
     "vue": "^3.2.30"
   },
   "devDependencies": {
-    "find-up": "^6.3.0"
+    "find-up": "^6.3.0",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.8"
   }
 }

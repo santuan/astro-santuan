@@ -3,10 +3,10 @@ import { Highlight } from "react-instantsearch-dom";
 const PostPreview = ({ hit }) => {
   return (
     <>
-      <div className="relative flex overflow-hidden duration-700 bg-gray-900 border-transparent shadow-sm ring-2 hover:ring-yellow-400 ring-gray-600 ring-inset h-96 w-96 hover:shadow-lg from-gray-800 via-gray-800 bg-gradient-to-br group hover:shadow-amber-400/50 hover:border-amber-400 rounded-2xl">
-        <div className="absolute inset-0 z-0 block overflow-hidden duration-700 group-hover:opacity-20 w-96 h-96 ">
+      <div className="relative flex overflow-hidden duration-700 bg-gray-900 border-transparent shadow-sm ring-2 hover:ring-yellow-400 ring-gray-600 ring-inset md:w-96 md:h-96 w-full h-80 hover:shadow-lg from-gray-800 via-gray-800 bg-gradient-to-br group hover:shadow-amber-400/50 hover:border-amber-400 rounded-2xl">
+        <div className="absolute inset-0 z-0 block overflow-hidden duration-700 group-hover:opacity-20 md:w-96 md:h-96 w-full h-80 ">
           <img
-            className="object-cover pb-0 mb-0 w-96 h-96 opacity-10 "
+            className="object-cover pb-0 mb-0 md:w-96 md:h-96 w-full h-80 opacity-10 "
             alt={hit.title}
             src={`https:${hit.featuredImg.file.url}?w=600&h=600&fm=png&q=80`}
           />
@@ -36,13 +36,13 @@ const PostPreview = ({ hit }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
                 />
               </svg>
