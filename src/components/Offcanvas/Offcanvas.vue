@@ -24,9 +24,9 @@
       class="OffcanvasNav"
       :class="[show ? '  translate-x-full ' : ' translate-x-0  ']"
     >
-      <a @click="show = !show" href="/" class="inicio"> <span>Inicio</span> </a>
-      <a @click="show = !show" href="/recursos" class="recursos"> <span>Recursos</span> </a>
-      <a @click="show = !show" href="/galeria" class="galeria"> <span>Imágenes</span> </a>
+      <a @click="show = !show" rel="prefetch" href="/" class="inicio"> <span>Inicio</span> </a>
+      <a @click="show = !show" rel="prefetch" href="/recursos" class="recursos"> <span>Recursos</span> </a>
+      <a @click="show = !show" rel="prefetch" href="/galeria" class="galeria"> <span>Imágenes</span> </a>
     </div>
   </div>
 </template>

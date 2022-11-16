@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/prefetch": "^0.1.1",
     "@astrojs/react": "^1.2.2",
     "@astrojs/solid-js": "^1.2.2",
     "@astrojs/svelte": "^1.0.2",
@@ -46,8 +47,8 @@
     "vue": "^3.2.30"
   },
   "devDependencies": {
-    "find-up": "^6.3.0",
     "@tailwindcss/line-clamp": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.8"
+    "@tailwindcss/typography": "^0.5.8",
+    "find-up": "^6.3.0"
   }
 }
