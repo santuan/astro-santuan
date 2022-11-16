@@ -1,7 +1,7 @@
 ---
 import Lightbox from "@/components/Modal/SvelteModal.svelte";
-const { alt, src } = Astro.props;
 import { Img } from "astro-imagetools/components";
+const { alt, src } = Astro.props;
 ---
 
 <div class="relative">
@@ -12,8 +12,8 @@ import { Img } from "astro-imagetools/components";
     height={800}
     loading="lazy"
     decoding="async"
-    layout="fixed"
-    placeholder="dominantColor"
+    layout="fill"
+    placeholder="blurred"
     format="webp"
   />
   <Lightbox client:visible>
@@ -24,8 +24,8 @@ import { Img } from "astro-imagetools/components";
       height={800}
       loading="lazy"
       decoding="async"
-      layout="fixed"
-      placeholder="dominantColor"
+      layout="fill"
+      placeholder="blurred"
       format="webp"
     />
   </Lightbox>
