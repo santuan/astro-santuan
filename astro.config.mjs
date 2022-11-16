@@ -6,12 +6,12 @@ import svelte from "@astrojs/svelte";
 import vue from "@astrojs/vue";
 import solidJs from "@astrojs/solid-js";
 import prefetch from "@astrojs/prefetch";
-
+import serviceWorker from "astrojs-service-worker";
 // https://astro.build/config
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://santuan.vercel.app/",
-  integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), astroImageTools, sitemap()]
+  integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), astroImageTools, sitemap(), serviceWorker()]
 });
