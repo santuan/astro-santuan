@@ -53,8 +53,7 @@ import "@/styles/Swiper.css";
 <script>
   import Swiper, { Navigation, Pagination } from "swiper";
   import "swiper/css";
-
-  new Swiper(".mySwiperVariationes01", {
+  const swiper = new Swiper(".mySwiperVariationes01", {
     modules: [Navigation, Pagination],
     autoplay: {
       delay: 2000,
