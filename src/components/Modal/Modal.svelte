@@ -37,17 +37,8 @@
   }
 </script>
 
-<svelte:window on:keydown={handle_keydown} />
 
-<svelte:head>
-  {#if modal}
-    <style>
-      body {
-        overflow: hidden;
-      }
-    </style>
-  {/if}
-</svelte:head>
+<svelte:window on:keydown={handle_keydown} />
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="modal-background" on:click={close} transition:fade />
@@ -78,5 +69,8 @@
     overflow: auto;
     transform: translate(-50%, -50%);
     border-radius: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>

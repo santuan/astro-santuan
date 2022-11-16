@@ -13,7 +13,9 @@ export default function RecursosPage() {
       <div className="z-20 flex flex-col items-center justify-center w-full min-h-screen overflow-hidden text-center bg-pattern bg-gray-800 ">
         <div className="fixed hidden md:block inset-0 p-2  pt-32 min-h-[90vh] dragArea"></div>
         <button
-          className={`${isSearchVisible ? "opacity-0 select-none -z-10" : "opacity-100 z-[51]"} outline-none duration-300 md:hidden fixed inset-0 bg-gray-900/90 backdrop-blur-lg `}
+          className={`${
+            isSearchVisible ? "opacity-0 select-none -z-10" : "opacity-100 z-[51]"
+          } outline-none duration-300 md:hidden fixed inset-0 bg-gray-900/90 backdrop-blur-lg `}
           onClick={() => setSerchVisible(!isSearchVisible)}
         />
         <div className="relative flex flex-col items-center justify-center w-full min-h-screen px-2 py-12 mx-auto overflow-hidden ">
@@ -23,7 +25,7 @@ export default function RecursosPage() {
                 onClick={() => setSerchVisible(!isSearchVisible)}
                 className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900"
               >
-                <div className="flex items-center h-12 justify-end w-full text-left">
+                <div className="flex items-center h-12 justify-start w-full text-left">
                   <span>Encontrador</span>
                 </div>
                 <div className="px-2 cursor-pointer relative flex justify-center items-center z-[1001] h-12">

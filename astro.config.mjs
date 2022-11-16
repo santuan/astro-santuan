@@ -6,9 +6,8 @@ import svelte from "@astrojs/svelte";
 import vue from "@astrojs/vue";
 import solidJs from "@astrojs/solid-js";
 import prefetch from "@astrojs/prefetch";
-import serviceWorker from "astrojs-service-worker";
 import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://santuan.vercel.app/",
-  integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), astroImageTools, sitemap(), serviceWorker()]
+  integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), astroImageTools, sitemap()]
 });
