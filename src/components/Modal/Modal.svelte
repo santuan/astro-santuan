@@ -45,7 +45,7 @@
       }
 
       .logo, .offcanvasBtn {
-        @apply opacity-0 select-none duration-300 -z-50;
+        @apply opacity-0  -translate-y-24 ;
       }
     </style>
   {/if}

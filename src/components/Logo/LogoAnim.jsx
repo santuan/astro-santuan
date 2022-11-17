@@ -12,7 +12,7 @@ const WelcomeStnCompoent = () => {
   }, []);
   return (
     <>
-      <a href="/" rel="prefetch" className="logo fixed top-2 left-0 ml-3 z-[999] flex justify-center" aria-label="STN - Volver al inicio">
+      <a href="/" rel="prefetch" className="logo fixed top-2 duration-1000 left-0 ml-3 z-[999] flex justify-center" aria-label="STN - Volver al inicio">
         <div id="circulo-cuadrado-triangulo" style={{ width: 120, height: 50 }} />
         <LogoSvg />
       </a>
