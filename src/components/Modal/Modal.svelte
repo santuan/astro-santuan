@@ -37,6 +37,19 @@
   }
 </script>
 
+<svelte:head>
+  {#if modal}
+    <style>
+      body {
+        overflow: hidden;
+      }
+
+      .logo, .offcanvasBtn {
+        @apply opacity-0 select-none duration-300 -z-50;
+      }
+    </style>
+  {/if}
+</svelte:head>
 
 <svelte:window on:keydown={handle_keydown} />
 

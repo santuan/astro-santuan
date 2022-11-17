@@ -6,7 +6,7 @@
       :class="[show ? '  opacity-0 select-none z-0 ' : ' opacity-100 z-[998] ']"
     />
     <button
-      class="fixed text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-700/80 hover:bg-gray-700/40 duration-300 font-bold text-gray-100 right-2 z-[999] flex top-4"
+      class="offcanvasBtn fixed text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-700/80 hover:bg-gray-700/40 duration-300 font-bold text-gray-100 right-2 z-[999] flex top-4"
       @click="show = !show"
     >
       <svg

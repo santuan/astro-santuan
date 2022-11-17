@@ -30,7 +30,6 @@
 
 {#if showModal}
   <Modal on:close={() => (showModal = false)}>
-    <!-- <img src={src} alt={alt} /> -->
     <slot/>
   </Modal>
 {/if}
