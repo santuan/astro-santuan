@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 
 export default function Example() {
   return (
-    <div className="fixed bottom-0 md:bottom-auto top-auto md:top-1 md:right-12 right-0 z-50 w-64 m-3 text-right">
+    <div className="fixed bottom-0 md:bottom-auto moveUp duration-1000 top-auto md:top-1 md:right-12 right-0 z-50 w-64 m-3 text-right">
       <Menu as="div" className="relative inline-block text-left">
         <div>
           <Menu.Button className="btn !text-sm uppercase yellow">

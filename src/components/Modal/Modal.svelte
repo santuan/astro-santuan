@@ -44,7 +44,7 @@
         overflow: hidden;
       }
 
-      .logo, .offcanvasBtn {
+      .logo, .offcanvasBtn, .moveUp {
         @apply opacity-0  -translate-y-24 ;
       }
     </style>

@@ -1,7 +1,7 @@
 <template>
   <div data-turbo-permanent id="offcanvas">
     <button
-      class="fixed inset-0 bg-gray-900/60 z-0 duration-300 backdrop-blur"
+      class="fixed inset-0 bg-gray-900/60 duration-300 backdrop-blur w-full"
       @click="show = !show"
       :class="[show ? '  opacity-0 select-none z-0 ' : ' opacity-100 z-[998] ']"
     />
@@ -38,7 +38,7 @@ const show = ref(true);
 
 <style>
 .OffcanvasNav {
-@apply  fixed right-0 text-center shadow-lg font-mono text-2xl space-y-12 top-0 bottom-0 bg-gray-900 text-white duration-700 w-64 p-3 z-[1000] flex justify-start pt-12 flex-col
+@apply  fixed right-0 text-center shadow-2xl font-mono text-2xl space-y-12 top-0 bottom-0 bg-gray-900 text-white duration-700 w-64 p-3 z-[1000] flex justify-start pt-12 flex-col
 }
 
 .OffcanvasNav a.inicio {
