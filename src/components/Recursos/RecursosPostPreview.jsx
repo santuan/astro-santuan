@@ -15,16 +15,17 @@ const PostPreview = ({ hit }) => {
           <div className="flex items-baseline justify-between w-full">
             <a
               rel="noopener noreferrer"
-              href={`https://www.cooparaje.com.ar/recursos/${hit.slug}`}
+              href={hit.url}
               target="_blank"
               className="block w-full font-mono text-2xl font-bold text-left text-yellow-500 duration-700 group-hover:opacity-100 hover:text-white "
             >
               {hit.title}
             </a>
           </div>
-          <p className="my-2 font-mono text-xl text-left text-white">
+          <p className="my-2 font-mono text-xl line-clamp-4 text-left text-white">
             <Highlight hit={hit} attribute="excerpt.excerpt" tagName="mark" />
           </p>
+
           <div className="absolute  group bottom-0 right-0 z-[999]">
             <a
               rel="noopener noreferrer"
@@ -47,9 +48,14 @@ const PostPreview = ({ hit }) => {
                 />
               </svg>
             </a>
-            <div className="opacity-0 absolute right-6 top-9 z-0 font-bold w-64 font-mono duration-300 group-hover:opacity-100">
-              Link al recurso
-            </div>
+            <a
+              rel="noopener noreferrer"
+              href={hit.url}
+              target="_blank"
+              className="opacity-0 absolute right-20 top-9 z-0 font-bold w-[280px] font-mono duration-300 hover:text-yellow-500 group-hover:opacity-100"
+            >
+              <small className="text-right opacity-90 text-sm font-mono block w-[280px] truncate">{hit.url}</small>
+            </a>
           </div>
         </div>
       </div>
