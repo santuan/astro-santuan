@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import { astroImageTools } from "astro-imagetools";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
@@ -8,9 +7,8 @@ import solidJs from "@astrojs/solid-js";
 import prefetch from "@astrojs/prefetch";
 import sitemap from "@astrojs/sitemap";
 import image from '@astrojs/image';
-
-// https://astro.build/config
 export default defineConfig({
   site: "https://santuan.vercel.app/",
-  integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), image(), astroImageTools, sitemap()]
-});
+  integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), image(), sitemap()]
+})
+
