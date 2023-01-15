@@ -1,17 +1,18 @@
 ---
-import Carousel01 from "./Carousel01.astro";
-import Carousel02 from "./Carousel02.astro";
-import Carousel03 from "./Carousel03.astro";
-// import { Img } from "astro-imagetools/components";
+import Carousel01 from "./Carousel01.jsx";
+import Carousel02 from "./Carousel02.jsx";
+import Carousel03 from "./Carousel03.jsx";
 ---
 
 <div
   class="relative grid w-full pb-12 mx-auto scroll-mt-10 bg-gray-900/50 bg-opacity-30 bg-gradient-to-b from-red-700 to-amber-600"
 >
   <div class="max-w-xl px-6 pt-12 mx-auto">
-    <div class="flex flex-col  items-center justify-center w-full px-3 pt-24 pb-12 font-serif text-3xl text-center">
+    <div
+      class="flex flex-col items-center justify-center w-full px-3 pt-24 pb-12 font-serif text-3xl text-center"
+    >
       <small
-      id="ejemplo2"
+        id="ejemplo2"
         class="w-24 px-2 py-1 mb-3 font-mono text-xs font-medium text-center uppercase rounded-md shadow bg-gray-900/20"
       >
         Ejemplo 2
@@ -19,10 +20,18 @@ import Carousel03 from "./Carousel03.astro";
       Subir imágenes de referencia y generar variaciones.
     </div>
   </div>
-  <div class="grid max-w-lg px-6 mx-auto lg:gap-12 w-full xl:max-w-5xl xl:grid-cols-2 mb-6 gap-6">
-    <div class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10">
-      <div class="absolute top-0 right-0 z-10 flex items-center justify-center m-2">
-        <p class="px-3 py-1 font-mono text-xs rounded-full bg-red-900/80">Original en Blender</p>
+  <div
+    class="grid max-w-lg px-6 mx-auto lg:gap-12 w-full xl:max-w-5xl xl:grid-cols-2 mb-6 gap-6"
+  >
+    <div
+      class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10"
+    >
+      <div
+        class="absolute top-0 right-0 z-10 flex items-center justify-center m-2"
+      >
+        <p class="px-3 py-1 font-mono text-xs rounded-full bg-red-900/80">
+          Original en Blender
+        </p>
       </div>
       <div class="relative overflow-hidden shadow-2xl rounded-2xl">
         <div class="object-cover object-center w-full">
@@ -37,48 +46,77 @@ import Carousel03 from "./Carousel03.astro";
         </div>
       </div>
     </div>
-    <div class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10">
-      <div class="absolute top-0 right-0 z-10 flex items-center justify-center m-2">
-        <p class="px-3 py-1 font-mono text-xs rounded-full bg-red-900/80">Variaciones de Dall·E</p>
+    <div
+      class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10"
+    >
+      <div
+        class="absolute top-0 right-0 z-20 flex items-center justify-center m-2"
+      >
+        <p class="px-3 py-1 font-mono text-xs rounded-full bg-red-900/80">
+          Variaciones de Dall·E
+        </p>
       </div>
-      <div class="relative  overflow-hidden rounded-2xl">
-        <Carousel01 />
+      <div class="relative z-10 overflow-hidden rounded-2xl">
+        <Carousel01 client:visible />
       </div>
     </div>
   </div>
 
-  <div class="grid max-w-lg px-6 mx-auto lg:gap-12 w-full xl:max-w-5xl xl:grid-cols-2 mb-6 gap-6">
-    <div class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10">
-      <div class="absolute top-0 right-0 z-10 flex items-center justify-center m-2">
-        <p class="px-3 py-1 font-mono text-xs rounded-full bg-blue-900/80">Original en Blender</p>
+  <div
+    class="grid max-w-lg px-6 mx-auto lg:gap-12 w-full xl:max-w-5xl xl:grid-cols-2 mb-6 gap-6"
+  >
+    <div
+      class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10"
+    >
+      <div
+        class="absolute top-0 right-0 z-10 flex items-center justify-center m-2"
+      >
+        <p class="px-3 py-1 font-mono text-xs rounded-full bg-blue-900/80">
+          Original en Blender
+        </p>
       </div>
       <div class="relative overflow-hidden shadow-2xl rounded-2xl">
-        <div class="object-cover object-center w-full">
+        <div class=" w-full">
           <img
             placeholder="blurred"
             loading="lazy"
-            width={500}
-            height={500}
+            width={1500}
+            height={1500}
+            class="w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] object-cover  object-center "
             alt="3d render de Cuadrado blanco en cubos rojos"
-            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_650,q_auto:eco/v1654817028/santuan/tokens/untitled_i27pcx_evplpa.webp"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1500,q_auto:eco/v1654817028/santuan/tokens/untitled_i27pcx_evplpa.webp"
           />
         </div>
       </div>
     </div>
-    <div class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10">
-      <div class="absolute top-0 right-0 z-10 flex items-center justify-center m-2">
-        <p class="px-3 py-1 font-mono text-xs rounded-full bg-blue-900/80">Variaciones de Dall·E</p>
+    <div
+      class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10"
+    >
+      <div
+        class="absolute top-0 right-0 z-20 flex items-center justify-center m-2"
+      >
+        <p class="px-3 py-1 font-mono text-xs rounded-full bg-blue-900/80">
+          Variaciones de Dall·E
+        </p>
       </div>
-      <div class="relative overflow-hidden rounded-2xl">
-        <Carousel02 />
+      <div class="relative z-10 overflow-hidden rounded-2xl">
+        <Carousel02 client:visible />
       </div>
     </div>
   </div>
 
-  <div class="grid max-w-lg px-6 mx-auto lg:gap-12 w-full xl:max-w-5xl xl:grid-cols-2 mb-6 gap-6">
-    <div class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10">
-      <div class="absolute top-0 right-0 z-10 flex items-center justify-center m-2">
-        <p class="px-3 py-1 font-mono text-xs rounded-full bg-gray-900/80">Original en Blender</p>
+  <div
+    class="grid max-w-lg px-6 mx-auto lg:gap-12 w-full xl:max-w-5xl xl:grid-cols-2 mb-6 gap-6"
+  >
+    <div
+      class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10"
+    >
+      <div
+        class="absolute top-0 right-0 z-10 flex items-center justify-center m-2"
+      >
+        <p class="px-3 py-1 font-mono text-xs rounded-full bg-gray-900/80">
+          Original en Blender
+        </p>
       </div>
       <div class="relative overflow-hidden shadow-2xl rounded-2xl">
         <div class="object-cover object-center w-full">
@@ -93,12 +131,18 @@ import Carousel03 from "./Carousel03.astro";
         </div>
       </div>
     </div>
-    <div class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10">
-      <div class="absolute top-0 right-0 z-10 flex items-center justify-center m-2">
-        <p class="px-3 py-1 font-mono text-xs rounded-full bg-gray-900/80">Variaciones de Dall·E</p>
+    <div
+      class="relative w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] z-10"
+    >
+      <div
+        class="absolute top-0 right-0 z-20 flex items-center justify-center m-2"
+      >
+        <p class="px-3 py-1 font-mono text-xs rounded-full bg-gray-900/80">
+          Variaciones de Dall·E
+        </p>
       </div>
-      <div class="relative overflow-hidden rounded-2xl">
-        <Carousel03 />
+      <div class="relative overflow-hidden  z-10 rounded-2xl">
+        <Carousel03 client:visible />
       </div>
     </div>
   </div>

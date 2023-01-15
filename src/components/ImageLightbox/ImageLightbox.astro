@@ -16,7 +16,7 @@ const { alt, src } = Astro.props;
     placeholder="blurred"
     format="webp"
   />
-  <Lightbox client:idle>
+  <Lightbox client:visible>
     <img
       alt={alt}
       src={src}
