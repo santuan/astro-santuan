@@ -1,25 +1,5 @@
 import React from "react";
-import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
-
-// const fadeImages = [
-//   {
-//     url: "https://santuan.netlify.app/static/ac405f51e282c9d3833cce9f02445845/97763/DALL_E_2022-05-29_17.38.22_kcx7sw.webp",
-//     caption: "First Slide",
-//   },
-//   {
-//     url: "https://santuan.netlify.app/static/b1a3b5a84c8261878d7c1d844a97cfc7/97763/DALL_E_2022-05-29_17.38.13_kwe3bj.webp",
-//     caption: "Second Slide",
-//   },
-//   {
-//     url: "https://santuan.netlify.app/static/e3a7a9006dff503ab32f8b5df929f15d/97763/DALL_E_2022-05-29_17.38.19_uzkkqn.webp",
-//     caption: "Third Slide",
-//   },
-//   {
-//     url: "https://santuan.netlify.app/static/df485763fc6f43869f35ac0a8936e703/97763/DALL_E_2022-05-29_17.39.23_undjh0.webp",
-//     caption: "Fourth Slide",
-//   },
-// ];
 
 export default function Slideshow({fadeImages}) {
   return (

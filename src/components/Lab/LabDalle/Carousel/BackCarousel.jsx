@@ -1,5 +1,4 @@
 import React from "react";
-import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
 
 const fadeImages = [
@@ -24,6 +23,7 @@ const fadeImages = [
     caption: "fifth Slide",
   },
 ];
+
 export default function Slideshow(props) {
   return (
     <div className="absolute inset-0 flex flex-col items-center justify-center py-32 overflow-hidden text-center text-white bg-gray-900 opacity-50 ">
