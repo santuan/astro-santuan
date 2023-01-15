@@ -27,7 +27,7 @@ export default function BackgroundSlider(props) {
               quality="60"
               title="Render - Un oceano repleto de barquitos bajo una constelación de galaxias"
               alt="Render - Un oceano repleto de barquitos bajo una constelación de galaxias"
-              src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747810/santuan/history/01_19_jh8ikd.jpg"
+              src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747810/santuan/history/01_19_jh8ikd.webp"
             />
           </Fade>
           <Fade>
@@ -53,7 +53,7 @@ export default function BackgroundSlider(props) {
               quality="60"
               title="Una guitarra con una planta creciendo en su interior"
               alt="Una guitarra con una planta creciendo en su interior"
-              src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1024,q_auto:eco/v1654748288/santuan/history/01_75_giaebn.jpg"
+              src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1024,q_auto:eco/v1654748288/santuan/history/01_75_giaebn.webp"
             />
           </Fade>
           <Fade>
@@ -79,7 +79,7 @@ export default function BackgroundSlider(props) {
               quality="60"
               title="Arte digital de una niña sobre una casa en el arbol."
               alt="Arte digital de una niña sobre una casa en el arbol."
-              src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747800/santuan/history/ImageSequence032_mkwbse.jpg"
+              src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747800/santuan/history/ImageSequence032_mkwbse.webp"
             />
           </Fade>
         </Carousel >
