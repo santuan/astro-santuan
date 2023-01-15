@@ -32,7 +32,11 @@ import "@fontsource/space-mono";
 
 <script>
   import Swup from "swup";
+  // import SwupPreserveScrollPlugin from '@ngsctt/swup-preserve-scroll-plugin';
+  import SwupScrollPlugin from '@swup/scroll-plugin';
   var swup = new Swup({
+    // plugins: [new SwupPreserveScrollPlugin()],
+    plugins: [new SwupScrollPlugin()],
     animationSelector: '[class*="swup-transition-"]',
   });
 </script>
