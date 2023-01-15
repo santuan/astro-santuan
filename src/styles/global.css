@@ -51,7 +51,7 @@ html.is-animating .swup-transition-fade {
 .react-slideshow-container + ul.indicators li {
   display: inline-block;
   position: relative;
-  width: 67px !important;
+  width: 37px !important;
   height: 7px;
   padding: 5px;
   margin: 0;

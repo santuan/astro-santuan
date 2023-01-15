@@ -1,7 +1,5 @@
 ---
-import Carousel01 from "./Carousel01.jsx";
-import Carousel02 from "./Carousel02.jsx";
-import Carousel03 from "./Carousel03.jsx";
+import Carousel from "./Carousel.jsx";
 ---
 
 <div
@@ -57,7 +55,15 @@ import Carousel03 from "./Carousel03.jsx";
         </p>
       </div>
       <div class="relative z-10 overflow-hidden rounded-2xl">
-        <Carousel01 client:visible />
+        <Carousel
+          client:visible
+          fadeImages={[
+            "https://santuan.netlify.app/static/ac405f51e282c9d3833cce9f02445845/97763/DALL_E_2022-05-29_17.38.22_kcx7sw.webp",
+            "https://santuan.netlify.app/static/b1a3b5a84c8261878d7c1d844a97cfc7/97763/DALL_E_2022-05-29_17.38.13_kwe3bj.webp",
+            "https://santuan.netlify.app/static/e3a7a9006dff503ab32f8b5df929f15d/97763/DALL_E_2022-05-29_17.38.19_uzkkqn.webp",
+            "https://santuan.netlify.app/static/df485763fc6f43869f35ac0a8936e703/97763/DALL_E_2022-05-29_17.39.23_undjh0.webp",
+          ]}
+        />
       </div>
     </div>
   </div>
@@ -76,13 +82,13 @@ import Carousel03 from "./Carousel03.jsx";
         </p>
       </div>
       <div class="relative overflow-hidden shadow-2xl rounded-2xl">
-        <div class=" w-full">
+        <div class="w-full">
           <img
             placeholder="blurred"
             loading="lazy"
             width={1500}
             height={1500}
-            class="w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] object-cover  object-center "
+            class="w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] object-cover object-center"
             alt="3d render de Cuadrado blanco en cubos rojos"
             src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1500,q_auto:eco/v1654817028/santuan/tokens/untitled_i27pcx_evplpa.webp"
           />
@@ -100,7 +106,16 @@ import Carousel03 from "./Carousel03.jsx";
         </p>
       </div>
       <div class="relative z-10 overflow-hidden rounded-2xl">
-        <Carousel02 client:visible />
+        <Carousel
+          client:visible
+          fadeImages={[
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060071/santuan/tokens/3/DALL_E_2022-05-29_10.21.58_iiejdg.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060036/santuan/tokens/3/DALL_E_2022-05-29_10.21.52_mv1nll.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060065/santuan/tokens/3/DALL_E_2022-05-29_10.22.11_ly3yfn.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060077/santuan/tokens/3/DALL_E_2022-05-29_10.22.06_y8xs3x.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060064/santuan/tokens/3/DALL_E_2022-05-29_10.21.27_dkjkao.webp",
+          ]}
+        />
       </div>
     </div>
   </div>
@@ -141,8 +156,17 @@ import Carousel03 from "./Carousel03.jsx";
           Variaciones de Dall·E
         </p>
       </div>
-      <div class="relative overflow-hidden  z-10 rounded-2xl">
-        <Carousel03 client:visible />
+      <div class="relative overflow-hidden z-10 rounded-2xl">
+        <Carousel
+          client:visible
+          fadeImages={[
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060112/santuan/tokens/4/DALL_E_2022-05-27_22.14.30_to64th.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060112/santuan/tokens/4/DALL_E_2022-05-27_22.14.58_bvkptt.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060102/santuan/tokens/4/DALL_E_2022-05-27_22.15.46_dtsxky.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060117/santuan/tokens/4/DALL_E_2022-05-27_22.14.46_zo2jvn.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/v1654060112/santuan/tokens/4/DALL_E_2022-05-27_22.15.34_zf8vgl.webp",
+          ]}
+        />
       </div>
     </div>
   </div>

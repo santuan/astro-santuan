@@ -2,32 +2,28 @@ import React from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
 
-const fadeImages = [
-  {
-    url: "https://res.cloudinary.com/srcouto/image/upload/v1654060071/santuan/tokens/3/DALL_E_2022-05-29_10.21.58_iiejdg.webp",
-    caption: "First Slide",
-  },
-  {
-    url: "https://res.cloudinary.com/srcouto/image/upload/v1654060036/santuan/tokens/3/DALL_E_2022-05-29_10.21.52_mv1nll.webp",
-    caption: "Second Slide",
-  },
-  {
-    url: "https://res.cloudinary.com/srcouto/image/upload/v1654060065/santuan/tokens/3/DALL_E_2022-05-29_10.22.11_ly3yfn.webp",
-    caption: "Third Slide",
-  },
-  {
-    url: "https://res.cloudinary.com/srcouto/image/upload/v1654060077/santuan/tokens/3/DALL_E_2022-05-29_10.22.06_y8xs3x.webp",
-    caption: "Fourth Slide",
-  },
-  {
-    url: "https://res.cloudinary.com/srcouto/image/upload/v1654060064/santuan/tokens/3/DALL_E_2022-05-29_10.21.27_dkjkao.webp",
-    caption: "Fourth Slide",
-  },
-];
+// const fadeImages = [
+//   {
+//     url: "https://santuan.netlify.app/static/ac405f51e282c9d3833cce9f02445845/97763/DALL_E_2022-05-29_17.38.22_kcx7sw.webp",
+//     caption: "First Slide",
+//   },
+//   {
+//     url: "https://santuan.netlify.app/static/b1a3b5a84c8261878d7c1d844a97cfc7/97763/DALL_E_2022-05-29_17.38.13_kwe3bj.webp",
+//     caption: "Second Slide",
+//   },
+//   {
+//     url: "https://santuan.netlify.app/static/e3a7a9006dff503ab32f8b5df929f15d/97763/DALL_E_2022-05-29_17.38.19_uzkkqn.webp",
+//     caption: "Third Slide",
+//   },
+//   {
+//     url: "https://santuan.netlify.app/static/df485763fc6f43869f35ac0a8936e703/97763/DALL_E_2022-05-29_17.39.23_undjh0.webp",
+//     caption: "Fourth Slide",
+//   },
+// ];
 
-export default function Slideshow(props) {
+export default function Slideshow({fadeImages}) {
   return (
-    <div className=" flex flex-col items-center justify-center w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] overflow-hidden text-center text-white bg-gray-900 ">
+    <div className=" flex flex-col items-center justify-center  mx-auto aspect-square overflow-hidden text-center text-white bg-gray-900 ">
       <div className="slide-container absolute inset-0 z-50">
         <Fade
           nextArrow={
@@ -79,12 +75,12 @@ export default function Slideshow(props) {
           autoplay={true}
           infinite={true}
         >
-          {fadeImages.map((fadeImage, index) => (
+          {fadeImages.map((fadeImage) => (
             <img
-              src={fadeImage.url}
+              src={fadeImage}
               className="w-full"
-              alt={fadeImage.caption}
-              key={index}
+              alt="Imagen"
+              key={fadeImage}
             />
           ))}
         </Fade>

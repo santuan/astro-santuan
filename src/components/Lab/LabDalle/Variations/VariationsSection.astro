@@ -1,8 +1,5 @@
 ---
-import Carousel01 from "@/components/Lab/LabDalle/Variations/Carousel01.astro";
-import Carousel02 from "@/components/Lab/LabDalle/Variations/Carousel02.astro";
-import Carousel03 from "@/components/Lab/LabDalle/Variations/Carousel03.astro";
-import Carousel04 from "@/components/Lab/LabDalle/Variations/Carousel04.astro";
+import Carousel from "./Carousel.jsx";
 ---
 
 <div
@@ -21,24 +18,50 @@ import Carousel04 from "@/components/Lab/LabDalle/Variations/Carousel04.astro";
       Variaciones de una secuencia de palabras, multiples maneras de percibirlas.
     </div>
   </div>
-  <div class="grid w-full max-w-7xl gap-3 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+  <div
+    class="grid w-full max-w-7xl gap-3 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+  >
     <div
       class="max-w-sm mx-auto relative grid grid-cols-1 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl bg-gray-900"
     >
       <div class="lg:max-w-sm rounded-t-2xl overflow-hidden relative">
-        <Carousel01 />
+        <Carousel
+          client:visible
+          fadeImages={[
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_440/v1654748309/santuan/history/01_51_kw7pv0.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_440/v1654748308/santuan/history/01_42_jw4b0n.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_440/v1654748281/santuan/history/01_46_ji4n2k.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_440/v1654748270/santuan/history/01_43_reejtr.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_440/v1654747866/santuan/history/01_49_blcwpq.png",
+          ]}
+        />
       </div>
-      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44">
-        <p class="w-full font-serif text-xl font-bold text-left md:text-2xl">En un castillo flotando en el cielo</p>
+      <div
+        class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44"
+      >
+        <p class="w-full font-serif text-xl font-bold text-left md:text-2xl">
+          En un castillo flotando en el cielo
+        </p>
       </div>
     </div>
     <div
       class="max-w-sm mx-auto relative grid grid-cols-1 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl bg-gray-900"
     >
       <div class="lg:max-w-sm rounded-t-2xl overflow-hidden relative">
-        <Carousel02 />
+        <Carousel
+          client:visible
+          fadeImages={[
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654748131/santuan/history/01_61_tbi5wb.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654748104/santuan/history/01_59_twfdch.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654748069/santuan/history/01_56_sce6xb.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654748049/santuan/history/01_58_bip9jf.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654748037/santuan/history/01_53_eopwxq.png",
+          ]}
+        />
       </div>
-      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44">
+      <div
+        class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44"
+      >
         <p class="w-full font-serif text-xl font-bold text-left md:text-2xl">
           Dos roedores disfrutaban una taza de té junto al fuego del hogar.
         </p>
@@ -48,9 +71,20 @@ import Carousel04 from "@/components/Lab/LabDalle/Variations/Carousel04.astro";
       class="max-w-sm mx-auto relative grid grid-cols-1 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl bg-gray-900"
     >
       <div class="lg:max-w-sm rounded-t-2xl overflow-hidden relative">
-        <Carousel03 />
+        <Carousel
+          client:visible
+          fadeImages={[
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747828/santuan/history/01_68_z7izax.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747825/santuan/history/01_63_ga6ipb.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747796/santuan/history/01_69_lz2jig.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747778/santuan/history/01_66_vtipyc.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747673/santuan/history/01_65_utmpcx.png",
+          ]}
+        />
       </div>
-      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44">
+      <div
+        class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44"
+      >
         <p class="w-full font-serif text-xl font-bold text-left md:text-2xl">
           <span class="font-normal opacity-80">y mientras caía</span>
           <br /> un conejo en paracaidas con una zanahoria.
@@ -61,11 +95,24 @@ import Carousel04 from "@/components/Lab/LabDalle/Variations/Carousel04.astro";
       class="max-w-sm mx-auto relative grid grid-cols-1 gap-0 overflow-hidden duration-300 shadow-lg hover:ring-2 ring-0 hover:ring-offset-2 hover:ring-offset-yellow-700 ring-amber-700 rounded-2xl bg-gray-900"
     >
       <div class="lg:max-w-sm rounded-t-2xl overflow-hidden relative">
-        <Carousel04 />
+        <Carousel
+          client:visible
+          fadeImages={[
+            "https://res.cloudinary.com/srcouto/image/upload/v1654747643/santuan/history/01_8_e75xq5.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747639/santuan/history/01_9_hf4b07.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747637/santuan/history/00_vgnzgw.webp",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654748263/santuan/history/01_7_m8vvfb.png",
+            "https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_600/v1654747723/santuan/history/01_11_rfzapy.png",
+          ]}
+        />
       </div>
-      <div class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44">
+      <div
+        class="flex flex-col items-center justify-center w-full p-5 text-gray-900 bg-amber-200/80 md:h-44"
+      >
         <p class="w-full font-serif text-xl font-bold text-left md:text-2xl">
-          Un rey conejo. <span class="font-normal opacity-80">lo estaba esperando</span>
+          Un rey conejo. <span class="font-normal opacity-80"
+            >lo estaba esperando</span
+          >
         </p>
       </div>
     </div>
