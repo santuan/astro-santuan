@@ -30,7 +30,7 @@ export default function Slideshow(props) {
       <div className="slide-container absolute inset-0 z-50">
         <Fade autoplay={true}>
           {fadeImages.map((fadeImage, index) => (
-            <img src={fadeImage.url} className="w-full" key={index} />
+            <img src={fadeImage.url} className="w-full" alt={fadeImage.caption} key={index} />
           ))}
         </Fade>
       </div>
