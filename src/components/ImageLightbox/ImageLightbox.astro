@@ -5,7 +5,7 @@ const { alt, src } = Astro.props;
 ---
 
 <div class="relative">
-  <Img
+  <img
     alt={alt}
     src={src}
     width={800}
@@ -17,7 +17,7 @@ const { alt, src } = Astro.props;
     format="webp"
   />
   <Lightbox client:idle>
-    <Img
+    <img
       alt={alt}
       src={src}
       width={800}
