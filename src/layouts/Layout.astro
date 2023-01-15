@@ -3,7 +3,7 @@ import Logo from "@/components/Logo/LogoAnim.jsx";
 import BaseHead from "@/components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/src/config";
 import Offcanvas from "@/components/Offcanvas/Offcanvas.vue";
-import 'animate.css';
+import "animate.css";
 import "@fontsource/yeseva-one";
 import "@fontsource/space-mono";
 ---
@@ -17,27 +17,43 @@ import "@fontsource/space-mono";
     </script>
   </head>
   <body>
-    <Offcanvas client:load />
-    <div data-turbo-permanent id="logo">
-      <Logo client:load />
+    <div data-turbo-permanent id="offcanvas">
+      <Offcanvas client:visible />
     </div>
-    <main  class="flex flex-col w-full relative z-[99]">
-      <slot />
+
+    <div data-turbo-permanent id="logo">
+      <Logo client:visible />
+    </div>
+    <main class="flex flex-col w-full relative z-[99] swup-transition-fade" id="swup">
+        <slot />
     </main>
   </body>
 </html>
+
+<script>
+  import Swup from "swup";
+  var swup = new Swup({
+    animationSelector: '[class*="swup-transition-"]',
+  });
+</script>
+
 <style is:global>
   :root {
     --accent: 124, 58, 237;
-    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      #da62c4 30%,
+      white 60%
+    );
   }
   html {
     font-family: system-ui, sans-serif;
     @apply bg-gray-900 text-white scroll-smooth;
   }
   code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
-      monospace;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
   .font-mono {
     font-variant-ligatures: none;

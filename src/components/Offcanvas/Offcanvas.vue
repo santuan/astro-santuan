@@ -1,5 +1,5 @@
 <template>
-  <div data-turbo-permanent id="offcanvas">
+  <div >
     <button
       class="fixed inset-0 bg-gray-900/60 duration-300 backdrop-blur w-full"
       @click="show = !show"

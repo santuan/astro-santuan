@@ -27,3 +27,12 @@ body {
 .turbo-progress-bar {
   @apply bg-gray-900 dark:bg-white;
 }
+
+.swup-transition-fade {
+  transition: 1.3s;
+  opacity: 1;
+}
+html.is-animating .swup-transition-fade {
+  opacity: 0;
+  filter: blur(1rem);
+}

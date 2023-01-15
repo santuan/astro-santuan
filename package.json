@@ -43,6 +43,7 @@
     "svelte": "^3.46.4",
     "svelte-compare-image": "^1.0.1",
     "swiper": "^8.4.4",
+    "swup": "^2.0.17",
     "tailwindcss": "^3.0.24",
     "vue": "^3.2.30"
   },
