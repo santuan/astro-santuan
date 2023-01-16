@@ -10,6 +10,5 @@ import image from '@astrojs/image';
 export default defineConfig({
   site: "https://santuan.vercel.app/",
   integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), image(), sitemap()],
-
 })
 

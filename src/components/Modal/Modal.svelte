@@ -54,8 +54,8 @@
 <svelte:window on:keydown={handle_keydown} />
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="modal-background" on:click={close} transition:fade />
-<div class="modal" role="dialog" aria-modal="true" bind:this={modal} transition:fade>
+<div class="fixed top-0 left-0 w-full h-full bg-gray-900/80 backdrop-blur z-[999]" on:click={close} transition:fade />
+<div class="fixed left-1/2 top-1/2 max-w-4xl w-[calc(100vw - 3em)] z-[1000] overflow-auto flex justify-center items-center -translate-x-1/2 -translate-y-1/2" role="dialog" aria-modal="true" bind:this={modal} transition:fade>
   <button type="button" on:click={close} class="	">
     <slot />
     <!-- svelte-ignore a11y-autofocus -->
@@ -63,27 +63,5 @@
 </div>
 
 <style>
-  .modal-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    @apply bg-gray-900/80 backdrop-blur z-[999];
-  }
 
-
-  .modal {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: calc(100vw - 3em);
-    @apply max-w-4xl z-[1000];
-    overflow: auto;
-    transform: translate(-50%, -50%);
-    border-radius: 0.2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 </style>
