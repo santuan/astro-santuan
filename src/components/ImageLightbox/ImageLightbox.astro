@@ -1,43 +1,12 @@
 ---
 import Lightbox from "@/components/Modal/SvelteModal.svelte";
-import { Image } from "@astrojs/image/components";
-// import { Img } from "astro-imagetools/components";
-const { alt, src, placeholderSrc } = Astro.props;
+import PlaceholderImage from "./PlaceholderImage.astro";
+const { alt, src } = Astro.props;
 ---
 
 <div class="relative xl:min-h-full overflow-hidden">
-  <div
-    class="absolute inset-0 z-0 blur-md bg-cover opacity-40 bg-center"
-    style={{ backgroundImage: "url(" + placeholderSrc + ")" }}
-  >
-  </div>
-  <Image
-    alt={alt}
-    src={src}
-    width={1200}
-    height={1200}
-    class="z-10 relative animate__animated animate__fadeIn animate__delay animate__slower"
-    loading="lazy"
-    decoding="async"
-    layout="fixed"
-    format="webp"
-  />
+  <PlaceholderImage alt={alt} src={src} />
   <Lightbox client:visible>
-    <div
-      class="absolute inset-0 z-0 opacity-40 blur-md bg-cover bg-center"
-      style={{ backgroundImage: "url(" + placeholderSrc + ")" }}
-    >
-    </div>
-    <Image
-      alt={alt}
-      src={src}
-      width={880}
-      height={880}
-      loading="lazy"
-      decoding="async"
-      class="z-10 !h-auto relative animate__animated animate__fadeIn animate__delay animate__slower"
-      layout="fixed"
-      format="webp"
-    />
+    <PlaceholderImage alt={alt} src={src}/>
   </Lightbox>
 </div>
