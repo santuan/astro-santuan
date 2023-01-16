@@ -58,7 +58,7 @@ export default function Slideshow({fadeImages}) {
           {fadeImages.map((fadeImage) => (
             <img
               src={fadeImage}
-              className="w-full"
+              className="w-full !rounded-none"
               alt="Imagen"
               key={fadeImage}
             />
