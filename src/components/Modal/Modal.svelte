@@ -55,7 +55,7 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="fixed top-0 left-0 w-full h-full bg-gray-900/80 backdrop-blur z-[999]" on:click={close} transition:fade />
-<div class="fixed left-1/2 top-1/2 max-w-4xl w-[calc(100vw-3em)] z-[1000] overflow-auto flex justify-center items-center -translate-x-1/2 -translate-y-1/2" role="dialog" aria-modal="true" bind:this={modal} transition:fade>
+<div class="fixed left-1/2 top-1/2 max-w-3xl w-[calc(100vw-3em)] z-[1000] overflow-auto flex justify-center items-center -translate-x-1/2 -translate-y-1/2" role="dialog" aria-modal="true" bind:this={modal} transition:fade>
   <button type="button" on:click={close} class="w-full">
     <slot />
     <!-- svelte-ignore a11y-autofocus -->
