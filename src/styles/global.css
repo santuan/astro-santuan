@@ -176,7 +176,7 @@ html.is-animating .swup-transition-fade {
   z-index: 9999 !important;
   left: 0 !important;
   right: 0 !important;
-  @apply bg-gray-900 !important;
+  @apply bg-gray-900/70 backdrop-blur-xl !important;
   padding: 0.65rem 0 0.5rem !important;
 }
 
