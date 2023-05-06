@@ -8,7 +8,7 @@ import prefetch from "@astrojs/prefetch";
 import sitemap from "@astrojs/sitemap";
 import image from '@astrojs/image';
 export default defineConfig({
-  site: "https://santuan.vercel.app/",
+  site: "https://astro-stn.vercel.app/",
   integrations: [tailwind(), react(), svelte(), vue(), solidJs(), prefetch(), image(), sitemap()],
 })
 
