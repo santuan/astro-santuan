@@ -4,6 +4,8 @@ import BaseHead from "@/components/BaseHead.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@/src/config";
 import Offcanvas from "@/components/Offcanvas/Offcanvas.vue";
 import "animate.css";
+import "@/styles/algolia.css";
+import "react-slideshow-image/dist/styles.css";
 import "@fontsource/yeseva-one";
 import "@fontsource/space-mono";
 ---
@@ -31,8 +33,10 @@ import "@fontsource/space-mono";
       <slot />
     </main>
     <script>
+      // @ts-ignore
       import Swup from "swup";
       // import SwupPreserveScrollPlugin from '@ngsctt/swup-preserve-scroll-plugin';
+      // @ts-ignore
       import SwupScrollPlugin from "@swup/scroll-plugin";
       var swup = new Swup({
         // plugins: [new SwupPreserveScrollPlugin()],
