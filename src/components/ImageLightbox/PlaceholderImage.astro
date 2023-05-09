@@ -3,26 +3,29 @@ import { Image } from "@astrojs/image/components";
 const { alt, src } = Astro.props;
 ---
 
-<div
-  class="absolute inset-0 z-0 blur-md bg-cover opacity-70 bg-center"
-  style={{
-    backgroundImage:
-      "url(https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_10,h_10/e_grayscale/" +
+<div class="absolute inset-0 z-0 bg-gray-600">
+  <Image
+    alt={alt}
+    src={"https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_10,h_10/e_blur:20" +
       src +
-      ")",
-  }}
->
+      ".webp"}
+    width={10}
+    height={10}
+    class="z-10 relative w-full opacity-30 object-cover"
+    loading="lazy"
+    decoding="async"
+    format="webp"
+  />
 </div>
 <Image
   alt={alt}
-  src={"https://res.cloudinary.com/srcouto/image/upload/c_fill,h_1000,q_auto:eco,w_1000/" +
+  src={"https://res.cloudinary.com/srcouto/image/upload/c_fill,h_1000,w_1000/" +
     src +
     ".webp"}
   width={1000}
   height={1000}
-  class="z-10 relative animate__animated animate__fadeIn"
+  class="z-10 relative w-full animate__animated animate__fadeIn"
   loading="lazy"
   decoding="async"
-  layout="fixed"
   format="webp"
 />

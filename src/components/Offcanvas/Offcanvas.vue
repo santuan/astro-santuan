@@ -4,7 +4,7 @@
       class="fixed inset-0 bg-gray-900/60 duration-300 backdrop-blur w-full"
       @click="show = !show"
       aria-label="Backdrop"
-      :class="[show ? '  opacity-0 select-none z-0 ' : ' opacity-100 z-[998] ']"
+      :class="[show ? '  opacity-0 select-none z-0 ' : ' opacity-100 z-[60] ']"
     />
     <button
       class="offcanvasBtn fixed text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-700/80 hover:bg-gray-800/90 duration-1000 font-bold text-gray-100 right-2 z-[999] flex top-4"

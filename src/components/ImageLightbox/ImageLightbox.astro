@@ -1,12 +1,12 @@
 ---
-import Lightbox from "@/components/Modal/SvelteModal.svelte";
+import Lightbox from "@/components/Modal/HeadlessModal";
 import PlaceholderImage from "./PlaceholderImage.astro";
 const { alt, src } = Astro.props;
 ---
 
 <div class="relative xl:min-h-full overflow-hidden">
   <PlaceholderImage alt={alt} src={src} />
-  <Lightbox client:visible>
+  <Lightbox client:visible title={alt}>
     <PlaceholderImage alt={alt} src={src}/>
   </Lightbox>
 </div>
