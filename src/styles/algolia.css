@@ -251,7 +251,7 @@
   }
 
   .ais-RefinementList-labelText {
-    @apply w-full px-3 font-mono truncate  text-xs sm:text-base font-normal text-left;
+    @apply w-full px-3 font-mono truncate text-xs sm:text-sm font-normal text-left;
   }
 
   .ais-RefinementList-count {

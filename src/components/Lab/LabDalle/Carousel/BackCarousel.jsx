@@ -15,7 +15,7 @@ const fadeImages = [
     caption: "Third Slide",
   },
   {
-    url: "https://res.cloudinary.com/srcouto/image/upload/v1654747878/santuan/history/ImageSequence030_wupe68.png",
+    url: "https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1024,q_auto:eco/v1654747878/santuan/history/ImageSequence030_wupe68.png",
     caption: "Fourth Slide",
   },
   {

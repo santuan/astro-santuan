@@ -17,7 +17,7 @@ export default function MyModal({ children, title }) {
       <button
         type="button"
         onClick={openModal}
-        class="absolute flex bottom-0 right-0 rounded-md bg-black bg-opacity-60 p-2 m-2 duration-300 text-sm font-medium text-white hover:bg-opacity-30 z-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+        className="absolute flex bottom-0 right-0 rounded-md bg-black bg-opacity-60 p-2 m-2 duration-300 text-sm font-medium text-white hover:bg-opacity-30 z-20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
         aria-label="Expand Picture"
       >
         <svg
@@ -26,7 +26,7 @@ export default function MyModal({ children, title }) {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          class=" w-4 md:w-6 h-4 md:h-6"
+          className=" w-4 md:w-6 h-4 md:h-6"
         >
           <path
             strokeLinecap="round"

@@ -1,5 +1,6 @@
 ---
-import Carousel from "./Carousel.jsx";
+// import Carousel from "./Carousel.jsx";
+import Carousel from "@/src/components/Lab/LabDalle/Carousel/Carousel.astro";
 ---
 
 <div
@@ -35,10 +36,11 @@ import Carousel from "./Carousel.jsx";
         <div class="object-cover object-center w-full">
           <img
             loading="lazy"
-            width={500}
-            height={500}
+            width={650}
+            class="glightbox"
+            height={650}
             alt="3d render de Cuadrado blanco en cubos rojos"
-            src="https://res.cloudinary.com/srcouto/image/upload/c_fill,h_500,q_80,w_500/v1654827280/santuan/tokens/14_bmzdy6_i7uuki.webp"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_fill,h_650,q_80,w_650/v1654827280/santuan/tokens/14_bmzdy6_i7uuki.webp"
           />
         </div>
       </div>
@@ -55,8 +57,8 @@ import Carousel from "./Carousel.jsx";
       </div>
       <div class="relative z-10 overflow-hidden rounded-2xl">
         <Carousel
-          client:visible
-          fadeImages={[
+          
+          images={[
             "https://gatsby-stn.netlify.app/static/ac405f51e282c9d3833cce9f02445845/97763/DALL_E_2022-05-29_17.38.22_kcx7sw.webp",
             "https://gatsby-stn.netlify.app/static/b1a3b5a84c8261878d7c1d844a97cfc7/97763/DALL_E_2022-05-29_17.38.13_kwe3bj.webp",
             "https://gatsby-stn.netlify.app/static/e3a7a9006dff503ab32f8b5df929f15d/97763/DALL_E_2022-05-29_17.38.19_uzkkqn.webp",
@@ -84,11 +86,11 @@ import Carousel from "./Carousel.jsx";
         <div class="w-full">
           <img
             loading="lazy"
-            width={1500}
-            height={1500}
-            class="w-[320px] h-[320px] mx-auto sm:w-[500px] sm:h-[500px] object-cover object-center"
+            width={650}
+            height={650}
+            class="w-[320px] glightbox h-[320px] mx-auto sm:w-[500px] sm:h-[500px] object-cover object-center"
             alt="3d render de Cuadrado blanco en cubos rojos"
-            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1500,q_auto:eco/v1654817028/santuan/tokens/untitled_i27pcx_evplpa.webp"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_650,q_auto:eco/v1654817028/santuan/tokens/untitled_i27pcx_evplpa.webp"
           />
         </div>
       </div>
@@ -105,8 +107,8 @@ import Carousel from "./Carousel.jsx";
       </div>
       <div class="relative z-10 overflow-hidden rounded-2xl">
         <Carousel
-          client:visible
-          fadeImages={[
+          
+          images={[
             "https://res.cloudinary.com/srcouto/image/upload/v1654060071/santuan/tokens/3/DALL_E_2022-05-29_10.21.58_iiejdg.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060036/santuan/tokens/3/DALL_E_2022-05-29_10.21.52_mv1nll.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060065/santuan/tokens/3/DALL_E_2022-05-29_10.22.11_ly3yfn.webp",
@@ -135,10 +137,11 @@ import Carousel from "./Carousel.jsx";
         <div class="object-cover object-center w-full">
           <img
             loading="lazy"
-            width={500}
-            height={500}
+            width={650}
+            class="glightbox"
+            height={650}
             alt="3d render de Cuadrado blanco en cubos rojos"
-            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_500,w_500/v1654817026/santuan/tokens/2_iutptm_j66y1p.webp"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_650,w_650/v1654817026/santuan/tokens/2_iutptm_j66y1p.webp"
           />
         </div>
       </div>
@@ -155,8 +158,8 @@ import Carousel from "./Carousel.jsx";
       </div>
       <div class="relative overflow-hidden z-10 rounded-2xl">
         <Carousel
-          client:visible
-          fadeImages={[
+          
+          images={[
             "https://res.cloudinary.com/srcouto/image/upload/v1654060112/santuan/tokens/4/DALL_E_2022-05-27_22.14.30_to64th.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060112/santuan/tokens/4/DALL_E_2022-05-27_22.14.58_bvkptt.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060102/santuan/tokens/4/DALL_E_2022-05-27_22.15.46_dtsxky.webp",

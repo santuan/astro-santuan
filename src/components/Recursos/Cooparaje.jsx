@@ -11,7 +11,7 @@ export default function RecursosPage() {
   return (
     <>
       <div className="z-20 flex flex-col items-center justify-center w-full min-h-screen overflow-hidden text-center bg-pattern bg-gray-800 ">
-        <div className="fixed hidden md:block inset-0 p-2  pt-32 min-h-[90vh] dragArea"></div>
+        <div className="fixed hidden md:block inset-0 p-2  pt-20 min-h-[90vh] dragArea"></div>
         <button
           className={`${
             isSearchVisible ? "opacity-0 select-none -z-10" : "opacity-100 z-[51]"
@@ -86,7 +86,7 @@ export default function RecursosPage() {
                 </div>
               </div>
             </div>
-            <Draggable handle=".handle" defaultPosition={{ x: 50, y: 50 }} position={null} bounds=".dragArea" scale={1}>
+            <Draggable handle=".handle" defaultPosition={{ x: 0, y: 0 }} position={null} bounds=".dragArea" scale={1}>
               <div className="z-[1000] fixed md:block hidden bg-gray-900  left-5 top-24 w-80 rounded-lg overflow-hidden group">
                 <div className="flex items-center justify-between w-full pl-2 py-0 md:py-0 font-mono font-bold text-base text-white uppercase duration-300 bg-[#e74446] active:!bg-[#f8e651] handle h-8 hover:bg-[#2f85c0] cursor-grab active:cursor-grabbing group-hover:bg-[#2f85c0] active:text-gray-900">
                   <div className="flex items-center justify-start w-full text-left">
@@ -176,7 +176,7 @@ export default function RecursosPage() {
               </div>
             </Draggable>
 
-            <div className="relative mx-auto z-10 pt-24 md:pt-4 w-full md:w-96 ">
+            <div className="relative mx-auto z-10 pt-24 md:pt-4 w-full md:w-full max-w-3xl ">
               <Hits className="w-full mx-auto" hitComponent={PostPreview} />
               <div className="fixed bottom-0 m-2 left-0 flex z-[999]  items-center justify-center">
                 <ClearRefinements

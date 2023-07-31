@@ -1,0 +1,70 @@
+---
+import { Image } from "@astrojs/image/components";
+const { images } = Astro.props;
+---
+
+<div class="max-w-4xl w-full mx-auto">
+  <div
+    style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+    class="swiper mySwiper"
+  >
+    <div class="swiper-wrapper">
+      {
+        images.map((i) => {
+          return (
+            <a class="swiper-slide glightbox" href={i}>
+              <Image
+                alt={i}
+                src={i}
+                width={650}
+                height={650}
+                class="object-cover w-full"
+                format="webp"
+              />
+            </a>
+          );
+        })
+      }
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- Initialize Swiper -->
+<script>
+  import Swiper from "swiper/bundle";
+
+  // import styles bundle
+  import "swiper/css/bundle";
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loog: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<style is:global>
+  .swiper {
+    @apply w-full;
+  }
+  .swiper-pagination {
+    @apply !bottom-0 bg-gray-900/50 py-3;
+  }
+
+  span.swiper-pagination-bullet {
+    @apply w-8 h-3 rounded-md;
+  }
+</style>

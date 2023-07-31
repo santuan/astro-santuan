@@ -3,10 +3,10 @@ import { Highlight } from "react-instantsearch-dom";
 const PostPreview = ({ hit }) => {
   return (
     <>
-      <div className="relative flex overflow-hidden duration-700 bg-gray-900 border-transparent shadow-sm ring-2 hover:ring-yellow-400 ring-gray-600 ring-inset md:w-96 md:h-96 w-full h-80 hover:shadow-lg from-gray-800 via-gray-800 bg-gradient-to-br group hover:shadow-amber-400/50 hover:border-amber-400 rounded-2xl">
-        <div className="absolute inset-0 z-0 block overflow-hidden duration-700 group-hover:opacity-20 md:w-96 md:h-96 w-full h-80 ">
+      <div className="relative flex overflow-hidden duration-700 bg-gray-900 border-transparent shadow-sm ring-2 hover:ring-yellow-400 ring-gray-600 ring-inset  w-full hover:shadow-lg from-gray-800 via-gray-800 bg-gradient-to-br group hover:shadow-amber-400/50 hover:border-amber-400 rounded-2xl">
+        <div className=" inset-0 z-0 block overflow-hidden duration-700 group-hover:opacity-20 md:w-96 md:h-64 w-full h-64 ">
           <img
-            className="object-cover pb-0 mb-0 md:w-96 md:h-96 w-full h-80 opacity-10 "
+            className="object-cover pb-0 mb-0 md:w-96  w-full h-64 opacity-80 "
             alt={hit.title}
             src={`https:${hit.featuredImg.file.url}?w=600&h=600&fm=png&q=80`}
           />

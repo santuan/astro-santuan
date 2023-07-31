@@ -48,10 +48,10 @@ export default function Slideshow({ fadeImages }) {
             </svg>
           </button>
         }
-        indicators={true}
+        indicators
         transitionDuration={600}
-        autoplay={true}
-        infinite={true}
+        autoplay
+        infinite
       >
         {fadeImages.map((fadeImage) => (
           <img

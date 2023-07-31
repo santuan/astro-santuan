@@ -6,7 +6,4 @@ const { alt, src } = Astro.props;
 
 <div class="relative xl:min-h-full overflow-hidden">
   <PlaceholderImage alt={alt} src={src} />
-  <Lightbox client:visible title={alt}>
-    <PlaceholderImage alt={alt} src={src}/>
-  </Lightbox>
 </div>
