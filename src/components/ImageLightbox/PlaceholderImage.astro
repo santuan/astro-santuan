@@ -1,10 +1,9 @@
 ---
-import { Image } from "@astrojs/image/components";
 const { alt, src } = Astro.props;
 ---
 
 <div class="absolute inset-0 z-0 bg-gray-900">
-  <Image
+  <img
     alt={alt}
     src={"https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_10,h_10/" +
       src +
@@ -12,19 +11,14 @@ const { alt, src } = Astro.props;
     width={10}
     height={10}
     class="z-10 relative w-full opacity-80 object-cover"
-    loading="lazy"
-    decoding="async"
-    format="webp"
   />
 </div>
-<Image
+<img
   src={"https://res.cloudinary.com/srcouto/image/upload/c_fill,h_1600,w_1600/" +
     src +
     ".webp"}
   width={1600}
+  alt=""
   height={1600}
   class="z-10 relative glightbox w-full animate__animated animate__fadeIn"
-  loading="lazy"
-  decoding="async"
-  format="webp"
 />

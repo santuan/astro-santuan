@@ -1,70 +1,129 @@
-<template>
-  <div>
-    <Transition>
-      <button
-        v-if="!show"
-        class="fixed inset-0 bg-gray-900/60 duration-300 backdrop-blur w-full z-[101]"
-        @click="show = !show"
-        aria-label="Backdrop"
-      />
-    </Transition>
-    <button
-      class="offcanvasBtn fixed text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-700/80 hover:bg-gray-800/90 duration-1000 font-bold text-gray-100 right-2 z-[999] flex top-4"
-      @click="show = !show"
-      aria-label="Menu"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-8 h-8"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
-    </button>
-    <div
-      class="OffcanvasNav"
-      :class="[show ? '  translate-x-full ' : ' translate-x-0  ']"
-    >
-      <a @click="show = !show" rel="prefetch" href="/" class="inicio">
-        <span>Inicio</span>
-      </a>
-      
-      <a @click="show = !show" rel="prefetch" href="/lab/3d" class="galeria">
-        <span>3d</span>
-      </a>
-      <a @click="show = !show" rel="prefetch" href="/lab/dall-e" class="dall-e">
-        <span>Dall-e</span>
-      </a>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { ref } from "vue";
 const show = ref(true);
 </script>
 
+<template>
+  <div>
+    <button
+      class="offcanvasBtn fixed text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-700/80 hover:bg-gray-800/90 duration-1000 font-bold text-gray-100 right-2 z-[999] flex top-4"
+      @click="show = !show"
+      aria-label="Menu"
+    >
+      <Transition mode="out-in">
+        <svg
+          v-if="show"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <svg
+          v-else
+          class="w-8 h-8"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#fff"
+            d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"
+          />
+        </svg>
+      </Transition>
+    </button>
+    <Transition>
+      <div
+        v-if="!show"
+        class="fixed inset-0 bg-gray-900/70 z-[101] flex justify-center items-center font-serif text-6xl backdrop-blur-sm"
+      >
+        <a @click="show = !show" rel="prefetch" href="/lab/renders" class="link link--dia">
+          <span>Renders</span>
+        </a>
+      </div>
+    </Transition>
+  </div>
+</template>
+
 <style>
-.OffcanvasNav {
-  @apply fixed right-0 text-center shadow-2xl font-mono text-2xl space-y-12 top-0 bottom-0 bg-gray-900 text-white duration-700 w-64 p-3 z-[1000] flex justify-start pt-12 flex-col;
+.v-enter-active,
+.v-leave-active {
+  transition: opacity .9s ease;
 }
 
-.OffcanvasNav a.inicio {
-  @apply hover:text-amber-400;
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 
-.OffcanvasNav a.recursos {
-  @apply hover:text-red-400;
+
+.link {
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
 }
 
-.OffcanvasNav a.galeria {
-  @apply hover:text-blue-400;
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.link::before {
+    content: '';
+    /* show by default */
+}
+
+.link--dia {
+    @apply font-serif text-6xl
+}
+
+.link--dia::before,
+.link--dia::after {
+    opacity: 0;
+    transform-origin: 50% 0%;
+    transform: translate3d(0, 3px, 0);
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.link--dia:hover::before,
+.link--dia:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.link--dia::after {
+    content: '';
+    top: calc(100% + 10px);
+    width: 70%;
+    left: 15%;
+}
+
+.link--dia::before,
+.link--dia:hover::after {
+    transition-delay: 0.1s;
+}
+
+.link--dia:hover::before {
+    transition-delay: 0s;
 }
 </style>
