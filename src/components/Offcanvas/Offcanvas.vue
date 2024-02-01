@@ -94,7 +94,7 @@ const show = ref(true);
 }
 
 .link--dia {
-    @apply  text-3xl
+    @apply text-lg md:text-3xl
 }
 
 .link--dia::before,
