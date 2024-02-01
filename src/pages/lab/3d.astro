@@ -1,14 +1,11 @@
 ---
 import Gallery from "@/components/Galeria/Gallery.astro";
 import GalleryHero from "@/components/Galeria/GalleryHero.astro";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="Galeria">
   <div class="w-full p-3 mx-auto bg-black">
-    <div class="moveUp  duration-1000 fixed right-12 z-[600] flex justify-center top-1 m-3">
-      <a href="/lab/dall-e" rel="prefetch" class="btn animate__animated animate__flipInX animate__delay animate__slower !text-sm uppercase red">DALL·E·2</a>
-    </div>
     <GalleryHero/>
   </div>
   <div class="relative w-full bg-black bg-pattern scroll-mt-16">

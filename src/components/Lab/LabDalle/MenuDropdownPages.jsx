@@ -49,7 +49,7 @@ export default function Example() {
                     href="#ejemplo1"
                     className={`${active ? " blue" : ""} btn !text-xs w-full !justify-between !px-2`}
                   >
-                    1<span> Comparar estilos </span>
+                    1<span> Estilos </span>
                   </a>
                 )}
               </Menu.Item>
@@ -60,7 +60,7 @@ export default function Example() {
                     href="#ejemplo2"
                     className={`${active ? " red" : ""} btn !text-xs w-full !justify-between !px-2`}
                   >
-                    2<span> Variaciones de una imagen </span>
+                    2<span> Variaciones </span>
                   </a>
                 )}
               </Menu.Item>
@@ -69,20 +69,9 @@ export default function Example() {
                   <a
                     aria-label="Ir al primer ejemplo"
                     href="#ejemplo3"
-                    className={`${active ? " yellow" : ""} btn !text-xs w-full !justify-between !px-2`}
-                  >
-                    3<span> Variaciones de textos </span>
-                  </a>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <a
-                    aria-label="Ir al primer ejemplo"
-                    href="#ejemplo4"
                     className={`${active ? " green" : ""} btn !text-xs w-full !justify-between !px-2`}
                   >
-                    4<span> Generación espontánea </span>
+                    3<span> Generación espontánea </span>
                   </a>
                 )}
               </Menu.Item>

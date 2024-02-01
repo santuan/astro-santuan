@@ -1,6 +1,6 @@
 ---
 // import Carousel from "./Carousel.jsx";
-import Carousel from "@/src/components/Lab/LabDalle/Carousel/Carousel.astro";
+import Carousel from "./Carousel.jsx";
 ---
 
 <div
@@ -16,7 +16,7 @@ import Carousel from "@/src/components/Lab/LabDalle/Carousel/Carousel.astro";
       >
         Ejemplo 2
       </small>
-      Subir imágenes de referencia y generar variaciones.
+      variaciones.
     </div>
   </div>
   <div
@@ -57,8 +57,8 @@ import Carousel from "@/src/components/Lab/LabDalle/Carousel/Carousel.astro";
       </div>
       <div class="relative z-10 overflow-hidden rounded-2xl">
         <Carousel
-          
-          images={[
+        client:visible
+        fadeImages={[
             "https://gatsby-stn.netlify.app/static/ac405f51e282c9d3833cce9f02445845/97763/DALL_E_2022-05-29_17.38.22_kcx7sw.webp",
             "https://gatsby-stn.netlify.app/static/b1a3b5a84c8261878d7c1d844a97cfc7/97763/DALL_E_2022-05-29_17.38.13_kwe3bj.webp",
             "https://gatsby-stn.netlify.app/static/e3a7a9006dff503ab32f8b5df929f15d/97763/DALL_E_2022-05-29_17.38.19_uzkkqn.webp",
@@ -107,8 +107,8 @@ import Carousel from "@/src/components/Lab/LabDalle/Carousel/Carousel.astro";
       </div>
       <div class="relative z-10 overflow-hidden rounded-2xl">
         <Carousel
-          
-          images={[
+        client:visible
+        fadeImages={[
             "https://res.cloudinary.com/srcouto/image/upload/v1654060071/santuan/tokens/3/DALL_E_2022-05-29_10.21.58_iiejdg.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060036/santuan/tokens/3/DALL_E_2022-05-29_10.21.52_mv1nll.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060065/santuan/tokens/3/DALL_E_2022-05-29_10.22.11_ly3yfn.webp",
@@ -158,8 +158,8 @@ import Carousel from "@/src/components/Lab/LabDalle/Carousel/Carousel.astro";
       </div>
       <div class="relative overflow-hidden z-10 rounded-2xl">
         <Carousel
-          
-          images={[
+        client:visible
+        fadeImages={[
             "https://res.cloudinary.com/srcouto/image/upload/v1654060112/santuan/tokens/4/DALL_E_2022-05-27_22.14.30_to64th.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060112/santuan/tokens/4/DALL_E_2022-05-27_22.14.58_bvkptt.webp",
             "https://res.cloudinary.com/srcouto/image/upload/v1654060102/santuan/tokens/4/DALL_E_2022-05-27_22.15.46_dtsxky.webp",

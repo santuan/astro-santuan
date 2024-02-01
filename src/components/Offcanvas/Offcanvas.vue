@@ -35,11 +35,12 @@
       <a @click="show = !show" rel="prefetch" href="/" class="inicio">
         <span>Inicio</span>
       </a>
-      <a @click="show = !show" rel="prefetch" href="/recursos" class="recursos">
-        <span>Recursos</span>
+      
+      <a @click="show = !show" rel="prefetch" href="/lab/3d" class="galeria">
+        <span>3d</span>
       </a>
-      <a @click="show = !show" rel="prefetch" href="/galeria" class="galeria">
-        <span>Imágenes</span>
+      <a @click="show = !show" rel="prefetch" href="/lab/dall-e" class="dall-e">
+        <span>Dall-e</span>
       </a>
     </div>
   </div>
