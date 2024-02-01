@@ -44,10 +44,13 @@ const show = ref(true);
     <Transition>
       <div
         v-if="!show"
-        class="fixed inset-0 bg-gray-900/70 z-[101] flex justify-center items-center font-serif text-6xl backdrop-blur-sm"
+        class="fixed inset-0 flex-col gap-12 bg-gray-900/90 z-[101] flex justify-center items-center font-mono backdrop-blur-lg"
       >
         <a @click="show = !show" rel="prefetch" href="/lab/renders" class="link link--dia">
           <span>Renders</span>
+        </a>
+        <a @click="show = !show" rel="prefetch" href="/lab/container-error-exitoso" class="link link--dia">
+          <span>container.error.exitoso</span>
         </a>
       </div>
     </Transition>
@@ -91,7 +94,7 @@ const show = ref(true);
 }
 
 .link--dia {
-    @apply font-serif text-6xl
+    @apply  text-3xl
 }
 
 .link--dia::before,
