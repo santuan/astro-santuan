@@ -44,7 +44,7 @@ const show = ref(true);
     <Transition>
       <div
         v-if="!show"
-        class="fixed inset-0 flex-col gap-12 bg-gray-900/90 z-[101] flex justify-center items-center font-mono backdrop-blur-lg"
+        class="fixed inset-0 flex-col gap-12 bg-white/80 dark:bg-gray-900/90 z-[101] flex justify-center items-center font-mono backdrop-blur-lg"
       >
         <a @click="show = !show" rel="prefetch" href="/lab/renders" class="link link--dia">
           <span>Renders</span>
