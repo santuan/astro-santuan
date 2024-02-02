@@ -6,7 +6,7 @@ const show = ref(true);
 <template>
   <div>
     <button
-      class="offcanvasBtn fixed text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-700/80 hover:bg-gray-800/90 duration-1000 font-bold text-gray-100 right-3 z-[999] flex top-3"
+      class="offcanvasBtn fixed text-lg justify-center items-center rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-800/90 hover:bg-gray-950 duration-1000 font-bold text-gray-100 right-3 z-[999] flex top-3"
       @click="show = !show"
       aria-label="Menu"
     >
@@ -48,7 +48,7 @@ const show = ref(true);
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 1s ease;
+  transition: opacity .6s ease;
 }
 
 .v-enter-from,

@@ -1,11 +1,11 @@
 <div class="w-full flex justify-center items-center h-screen relative z-[500]">
-  <div class="aspect-square h-64 w-64 md:h-[500px] md:w-[500px]  mx-auto object-cover z-10 relative invert grayscale dark:grayscale-0 dark:invert-0 -hue-rotate-60 dark:hue-rotate-0 ">
+  <div class="aspect-square h-64 w-64 md:h-[420px] md:w-[420px] mx-auto object-cover z-10 relative">
     <video
       autoplay
       loop
       muted
       playsinline
-      class="animate__animated animate__fadeIn animate__slow"
+      class="animate__animated animate__fadeIn animate__slow hidden dark:flex"
       poster="https://res.cloudinary.com/srcouto/video/upload/c_scale,h_500,q_25/v1642599935/stn-renders/1230001-0500_mss0pe.webp"
     >
       <source
@@ -18,6 +18,27 @@
       />
       <source
         src="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:low,w_500/v1642599935/stn-renders/1230001-0500_mss0pe.ogv"
+        type="video/ogg"
+      />
+    </video>
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="animate__animated animate__fadeIn animate__slow dark:hidden"
+      poster="https://res.cloudinary.com/srcouto/video/upload/c_scale,h_500,q_25/v1706915960/stn-renders/0001-0500_tquw8e.webp"
+    >
+      <source
+        src="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:low,w_500/v1706915960/stn-renders/0001-0500_tquw8e.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:low,w_500/v1706915960/stn-renders/0001-0500_tquw8e.webm"
+        type="video/webm"
+      />
+      <source
+        src="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:low,w_500/v1706915960/stn-renders/0001-0500_tquw8e.ogv"
         type="video/ogg"
       />
     </video>
