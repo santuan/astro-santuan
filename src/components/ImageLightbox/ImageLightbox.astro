@@ -3,6 +3,6 @@ import PlaceholderImage from "./PlaceholderImage.astro";
 const { alt, src } = Astro.props;
 ---
 
-<div class="relative xl:min-h-full overflow-hidden">
+<div class="relative xl:min-h-full hover:opacity-80 duration-300 overflow-hidden">
   <PlaceholderImage alt={alt} src={src} />
 </div>

@@ -1,19 +1,35 @@
 <div
   class="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center dark:bg-gray-900 shadow-sm bg-pattern"
 >
-  <div class="relative z-50 w-full px-8 mx-auto mt-24 mb-2 text-left md:mt-8 max-w-7xl">
-    <h2 class="w-full font-serif text-3xl text-left md:text-6xl" style="mix-blend-mode: difference;">
-      <div class="block w-full mt-2 animate__animated animate__fadeIn animate__slower">
-        <h1 class="hover:opacity-75 font-bold  cursor-default duration-1000 md:hover:text-gray-500 dark:text-white text-gray-900">
-          Nada que decir,</h1>
-          <h2 class="hover:opacity-75 font-bold  cursor-default duration-1000 md:hover:text-gray-500 dark:text-white text-gray-900">
-            solo mostrar.</h2>
+  <div
+    class="relative z-50 w-full px-8 mx-auto mt-24 mb-2 text-left md:mt-8 max-w-7xl"
+  >
+    <h2
+      class="w-full font-serif text-3xl text-left md:text-6xl"
+      style="mix-blend-mode: difference;"
+    >
+      <div
+        class="block w-full mt-2 animate__animated animate__fadeIn animate__slower"
+      >
+        <h1
+          class="font-bold cursor-default duration-1000 md:hover:text-gray-500 dark:text-white text-gray-900"
+        >
+          Nada que decir,
+        </h1>
+        <h2
+          class="font-bold cursor-default duration-1000 group dark:text-white text-gray-900"
+        >
+          solo <a
+            href="/lab/renders"
+            class="inline-block opacity-50 group-hover:opacity-100 duration-1000"
+            ><span class="iniciar iniciar--dia">mostrar.</span></a>
+        </h2>
       </div>
     </h2>
-  </div>  
+  </div>
 </div>
 <div
-  class="md:scale-50 origin-center duration-1000 opacity-80 md:opacity-100 object-cover w-full h-screen  top-0 left-0 object-right z-0 md:object-center fixed inset-0"
+  class="md:scale-50 origin-center duration-1000 opacity-80 md:opacity-100 object-cover w-full h-screen top-0 left-0 object-right z-0 md:object-center fixed inset-0"
 >
   <video
     autoplay
@@ -37,3 +53,64 @@
     />
   </video>
 </div>
+
+<style>
+  .iniciar {
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
+  }
+
+  .iniciar::before,
+  .iniciar::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .iniciar::before {
+    content: "";
+    /* show by default */
+  }
+
+  .iniciar--dia {
+  }
+
+  .iniciar--dia::before,
+  .iniciar--dia::after {
+    opacity: 0.5;
+    transform-origin: 50% 0%;
+    transform: translate3d(0, 3px, 0);
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+  }
+
+  .iniciar--dia:hover::before,
+  .iniciar--dia:hover::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
+  }
+
+  .iniciar--dia::after {
+    content: "";
+    top: calc(100% + 10px);
+    width: 70%;
+    left: 15%;
+  }
+
+  .iniciar--dia::before,
+  .iniciar--dia:hover::after {
+    transition-delay: 0.1s;
+  }
+
+  .iniciar--dia:hover::before {
+    transition-delay: 0s;
+  }
+</style>

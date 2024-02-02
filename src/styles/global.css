@@ -17,15 +17,16 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  @apply bg-gray-900;
+  @apply dark:bg-gray-900 bg-gray-50;
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply bg-gray-100/90 hover:bg-gray-50 rounded-full;
+  @apply dark:bg-gray-100/90 dark:hover:bg-gray-50 rounded-full;
+  @apply bg-gray-800/90 hover:bg-gray-800;
 }
 
 .turbo-progress-bar {
-  @apply bg-gray-900 dark:bg-white;
+  @apply dark:bg-gray-900 bg-white;
 }
 
 .swup-transition-fade {
