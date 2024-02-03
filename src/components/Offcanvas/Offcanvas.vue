@@ -57,10 +57,10 @@ const show = ref(true);
         <a
           @click="show = !show"
           rel="prefetch"
-          href="/lab/container-error-exitoso"
+          href="/lab/containers"
           class="link link--dia animate__animated animate__fadeInUp"
         >
-          <span>container.error.exitoso</span>
+          <span>Containers</span>
         </a>
       </nav>
     </Transition>
