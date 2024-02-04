@@ -62,6 +62,14 @@ const show = ref(true);
         >
           <span>Containers</span>
         </a>
+        <a
+          @click="show = !show"
+          rel="prefetch"
+          href="/lab/tipografias"
+          class="link link--dia animate__animated animate__fadeInUp"
+        >
+          <span>Tipografías</span>
+        </a>
       </nav>
     </Transition>
   </div>
