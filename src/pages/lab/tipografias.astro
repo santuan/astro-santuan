@@ -2,13 +2,16 @@
 import Gallery from "@/components/Lab/tipografias/Gallery.astro";
 import GalleryHero from "@/components/Lab/tipografias/GalleryHero.astro";
 import Layout from "../../layouts/Layout.astro";
+import Example from "@/components/Lab/tipografias/example.astro";
 ---
 
 <Layout title="Container Fail">
   <div class="w-full mx-auto dark:bg-black">
-    <GalleryHero/>
+    <GalleryHero />
   </div>
-  <div class="relative w-full md:px-0 px-3 dark:bg-black bg-pattern scroll-mt-16">
+  <div
+    class="relative pt-12 w-full md:px-0 px-3 dark:bg-gray-900 bg-pattern"
+  >
     <Gallery />
   </div>
 </Layout>
