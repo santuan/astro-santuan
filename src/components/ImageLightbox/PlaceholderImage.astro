@@ -4,7 +4,7 @@ const { alt, src } = Astro.props;
 
 <div class="absolute inset-0 z-0 bg-gray-900">
   <img
-    alt={alt}
+    alt=""
     src={"https://res.cloudinary.com/srcouto/image/upload/c_scale,q_auto:eco,w_10,h_10/" +
       src +
       ".webp"}
@@ -18,7 +18,7 @@ const { alt, src } = Astro.props;
     src +
     ".webp"}
   width="1600"
-  alt=""
+  alt={alt}
   height="1600"
   class="z-10 relative  glightbox w-full animate__animated animate__fadeIn"
 />
