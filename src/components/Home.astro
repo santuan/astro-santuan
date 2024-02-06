@@ -1,20 +1,17 @@
 ---
-function getRandomInt(max: number) {
-  return Math.floor(Math.random() * max);
-}
 
-console.log(getRandomInt(3));
+const getRandomUrl = () => {
+  const randomNumber = Math.floor(Math.random() * 3) + 1; // Generates a random number between 1 and 3
 
-const random = getRandomInt(3);
+  // Define your URLs
+  const urls = [
+    '/lab/tipografias',
+    '/lab/containers',
+    '/lab/renders',
+  ];
 
-let answer = "";
-
-if (random === 0) {
-  answer = "/lab/tipografias";
-} else if (random === 1) {
-  answer = "/lab/containers";
-} else if (random === 2) {
-  answer = "/lab/renders";
+  // Return the URL based on the random number
+  return urls[randomNumber - 1];
 }
 ---
 
@@ -37,7 +34,7 @@ if (random === 0) {
           class="font-bold bg-white dark:bg-gray-900 p-1 inline-flex cursor-default group"
         >
           solo <a
-            href={answer}
+            href={getRandomUrl()}
             class="inline-block group-hover:opacity-100 ml-3 text-orange-300 duration-1000"
           >
             <span class="iniciar iniciar--dia">mostrar.</span>
