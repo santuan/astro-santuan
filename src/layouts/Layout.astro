@@ -37,7 +37,6 @@ import ThemeIcon from "@/components/ThemeIcon.astro";
       });
     </script>
 
-
     <style is:global>
       :root {
         --accent: 124, 58, 237;
@@ -73,6 +72,10 @@ import ThemeIcon from "@/components/ThemeIcon.astro";
 
       .gslide-description {
         @apply hidden;
+      }
+
+      .glightbox-clean .gslide-media {
+        @apply shadow-gray-100 dark:shadow-gray-950 shadow-md
       }
 
       .turbo-progress-bar {

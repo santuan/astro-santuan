@@ -47,15 +47,13 @@ const show = ref(true);
         class="fixed inset-0 flex-col gap-12 bg-white/80 dark:bg-gray-900/90 z-[101] flex justify-center items-center font-mono backdrop-blur-lg"
       >
         <a
-          @click="show = !show"
           rel="prefetch"
           href="/lab/renders"
           class="link link--dia animate__animated animate__fadeInUp"
         >
-          <span>Renders</span>
+          <span>Renderizar</span>
         </a>
         <a
-          @click="show = !show"
           rel="prefetch"
           href="/lab/containers"
           class="link link--dia animate__animated animate__fadeInUp"
@@ -63,12 +61,11 @@ const show = ref(true);
           <span>Containers</span>
         </a>
         <a
-          @click="show = !show"
           rel="prefetch"
-          href="/lab/tipografias"
+          href="/lab/palabras"
           class="link link--dia animate__animated animate__fadeInUp"
         >
-          <span>Tipografías</span>
+          <span>Palabras</span>
         </a>
       </nav>
     </Transition>

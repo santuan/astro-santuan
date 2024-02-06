@@ -1,19 +1,4 @@
----
 
-const getRandomUrl = () => {
-  const randomNumber = Math.floor(Math.random() * 3) + 1; // Generates a random number between 1 and 3
-
-  // Define your URLs
-  const urls = [
-    '/lab/tipografias',
-    '/lab/containers',
-    '/lab/renders',
-  ];
-
-  // Return the URL based on the random number
-  return urls[randomNumber - 1];
-}
----
 
 <div
   class="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center dark:bg-gray-900 shadow-sm bg-pattern"
@@ -21,20 +6,16 @@ const getRandomUrl = () => {
   <div
     class="relative z-50 w-full px-8 mx-auto mt-24 mb-2 text-left md:mt-8 max-w-7xl"
   >
-    <div class="w-full font-serif text-3xl text-left md:text-6xl">
+    <div
+      class="w-full font-serif text-3xl text-left md:text-6xl"
+    >
       <div
         class="flex-col w-full mt-2 flex justify-start items-start animate__animated animate__fadeIn animate__slower"
       >
-        <h1
-          class="font-bold bg-white dark:bg-gray-900 p-1 inline-flex cursor-default"
-        >
-          Nada que decir,
-        </h1>
-        <h2
-          class="font-bold bg-white dark:bg-gray-900 p-1 inline-flex cursor-default group"
-        >
+        <h1 class="font-bold bg-white dark:bg-gray-900 p-1 inline-flex cursor-default ">Nada que decir,</h1>
+        <h2 class="font-bold bg-white dark:bg-gray-900 p-1 inline-flex cursor-default   group">
           solo <a
-            href={getRandomUrl()}
+            href="/lab/palabras"
             class="inline-block group-hover:opacity-100 ml-3 text-orange-300 duration-1000"
           >
             <span class="iniciar iniciar--dia">mostrar.</span>
@@ -45,14 +26,14 @@ const getRandomUrl = () => {
   </div>
 </div>
 <div
-  class="scale-75 md:scale-50 origin-center duration-1000 object-cover w-full h-screen top-0 left-0 object-right z-0 md:object-center fixed inset-0"
+  class="scale-75 md:scale-50 origin-center duration-1000  object-cover w-full h-screen top-0 left-0 object-right z-0 md:object-center fixed inset-0"
 >
   <video
     autoplay
     loop
     muted
     playsinline
-    class="object-cover w-full h-screen absolute top-0 left-0 object-right z-0 md:object-center"
+    class=" object-cover w-full h-screen absolute top-0 left-0 object-right z-0 md:object-center"
     poster="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:eco,w_763/v1628508273/encoder/herohdsantuan0001-0250_wpgean.webp"
   >
     <source
