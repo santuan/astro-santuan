@@ -3,7 +3,6 @@ import tailwind from "@astrojs/tailwind";
 import vue from "@astrojs/vue";
 import prefetch from "@astrojs/prefetch";
 import sitemap from "@astrojs/sitemap";
-import image from "@astrojs/image";
 
 export default defineConfig({
   site: "https://astro-stn.vercel.app/",
@@ -11,7 +10,6 @@ export default defineConfig({
     tailwind(),
     vue(),
     prefetch(),
-    image(),
     sitemap(),
   ],
 });
