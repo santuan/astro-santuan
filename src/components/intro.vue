@@ -5,7 +5,7 @@ const show = ref(true);
 
 <template>
   <div
-    class="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center dark:bg-gray-900 shadow-sm bg-pattern"
+    class="relative flex flex-col items-center justify-center min-h-dvh overflow-hidden text-center dark:bg-gray-900 shadow-sm bg-pattern"
   >
     <div
       class="relative z-50 w-full px-8 mx-auto mt-24 mb-2 text-left md:mt-8 max-w-7xl"
@@ -40,7 +40,7 @@ const show = ref(true);
   <Transition>
     <div
       v-if="show"
-      class="scale-75 md:scale-50 dark:hover:opacity-50 origin-center duration-1000 object-cover w-full h-screen top-0 left-0 object-right z-0 md:object-center fixed inset-0"
+      class="scale-75 md:scale-50 dark:hover:opacity-50 origin-center duration-1000 object-cover w-full object-right z-0 md:object-center fixed inset-0"
     >
       <video
         autoplay
@@ -67,13 +67,13 @@ const show = ref(true);
 
     <div
       v-else
-      class="origin-center duration-1000 object-cover flex justify-center items-center w-full h-screen object-right md:object-center fixed inset-0 z-[99999]"
+      class="origin-center duration-1000 object-cover flex justify-center items-center w-full object-right md:object-center fixed bottom-0 top-0 left-0 right-0 z-[99999]"
     >
       <nav
-        class="md:flex-row flex-col h-screen flex justify-between mx-auto items-center w-full"
+        class="md:flex-row flex-col h-dvh flex justify-between mx-auto items-center w-full"
       >
         <div
-          class="border-b-2 md:border-b-0 overflow-hidden relative group md:border-r dark:border-white/10 w-full flex justify-center items-center h-screen "
+          class="border-b-2 h-1/3 md:border-b-0 overflow-hidden relative group md:border-r dark:border-white/10 w-full flex justify-center items-center md:h-screen"
         >
           <a rel="prefetch" href="/lab/renders" class="link link--dia mx-auto z-10 relative py-6">
             <span>Renderizar</span>
@@ -84,7 +84,7 @@ const show = ref(true);
           />
         </div>
         <div
-          class="border-b-2 md:border-b-0 overflow-hidden relative group md:border-r dark:border-white/10 w-full flex justify-center items-center h-screen "
+          class="border-b-2 h-1/3 md:border-b-0 overflow-hidden relative group md:border-r dark:border-white/10 w-full flex justify-center items-center md:h-screen "
         >
           <a
             rel="prefetch"
@@ -99,7 +99,7 @@ const show = ref(true);
           />
         </div>
         <div
-          class="w-full flex justify-center overflow-hidden relative group items-center h-screen "
+          class="w-full z-20 flex h-1/3 justify-center overflow-hidden relative group items-center md:h-screen "
         >
           <a rel="prefetch" href="/lab/palabras" class="link link--dia mx-auto z-10 relative py-6">
             <span>Palabras</span>
