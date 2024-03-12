@@ -1,12 +1,8 @@
----
-
----
-
 <div class="fixed top-3 z-[999] right-3">
   <button
     id="themeToggle"
     aria-label="Alternan modo blanco u oscuro"
-    class="text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 w-9 h-9 flex bg-gray-800/90 hover:bg-gray-950 duration-1000 font-bold text-gray-100"
+    class="text-lg justify-center items-center opacity-80 rounded-md overflow-hidden hover:opacity-100 w-9 h-9 flex bg-gray-800/90 hover:bg-gray-950 duration-1000 font-bold text-gray-100 outline-none focus-visible:ring-2 ring-offset-2 focus-visible:ring-gray-800/70"
   >
     <svg
       class="w-5 h-5"
@@ -26,6 +22,7 @@
     </svg>
   </button>
 </div>
+
 
 <script is:inline>
   const theme = (() => {
@@ -69,15 +66,19 @@
   }
   .sun {
     fill: white;
+    @apply opacity-100 origin-center;
   }
   .moon {
     fill: transparent;
+    @apply opacity-0 origin-center;
   }
 
   :global(.dark) .sun {
     fill: transparent;
+    @apply opacity-0;
   }
   :global(.dark) .moon {
     fill: white;
+    @apply opacity-100;
   }
 </style>
