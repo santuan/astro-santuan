@@ -200,7 +200,7 @@ nav a:nth-child(8) {
 }
 
 .tooltip {
-  display: inline-block;
+  @apply inline-block;
   border-bottom: 1px dotted black;
   /* If you want dots under the hoverable text */
 }
@@ -212,6 +212,7 @@ nav a:nth-child(8) {
   color: #fff;
   text-align: center;
   @apply -translate-x-32 -translate-y-8 duration-300 opacity-0 py-2 rounded-md bg-gray-800/70;
+  @apply hidden md:inline-flex;
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
@@ -221,6 +222,6 @@ nav a:nth-child(8) {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 100;
-  @apply -translate-x-36
+  @apply -translate-x-40
 }
 </style>
