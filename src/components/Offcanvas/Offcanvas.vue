@@ -1,75 +1,87 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 import { ref } from 'vue';
 const show = ref(true);
 </script>
 
 <template>
-  <div>
-    <button
-      class="offcanvasBtn fixed text-lg justify-center items-center rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-800/90 hover:bg-gray-950 duration-1000 font-bold text-gray-100 right-3 z-[999] flex top-3"
-      @click="show = !show"
-      aria-label="Menu"
-    >
-      <Transition mode="out-in">
-        <svg
-          v-if="show"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-        <svg
-          v-else
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-8 h-8"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="#fff"
-            d="m12 12.708l-5.246 5.246q-.14.14-.344.15q-.204.01-.364-.15t-.16-.354q0-.194.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344q-.01-.204.15-.364t.354-.16q.194 0 .354.16L12 11.292l5.246-5.246q.14-.14.344-.15q.204-.01.364.15t.16.354q0 .194-.16.354L12.708 12l5.246 5.246q.14.14.15.344q.01.204-.15.364t-.354.16q-.194 0-.354-.16z"
-          />
-        </svg>
-      </Transition>
-    </button>
-    <Transition>
-      <nav
-        v-if="!show"
-        class="fixed inset-0 flex-col gap-12 bg-white/80 dark:bg-gray-900/90 z-[101] flex justify-center items-center font-mono backdrop-blur-lg"
+  <Teleport to="body">
+    <div>
+      <button
+        class="offcanvasBtn fixed text-lg justify-center items-center rounded-md overflow-hidden hover:opacity-100 p-0.5 bg-gray-800/90 hover:bg-gray-950 duration-1000 font-bold text-gray-100 right-14 z-[999] flex top-3"
+        @click="show = !show"
+        aria-label="Menu"
       >
-        <a
-          rel="prefetch"
-          href="/lab/renders"
-          class="link link--dia animate__animated animate__fadeInUp"
+        <Transition mode="out-in">
+          <svg
+            v-if="show"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <svg
+            v-else
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-8"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#fff"
+              d="m12 12.708l-5.246 5.246q-.14.14-.344.15q-.204.01-.364-.15t-.16-.354q0-.194.16-.354L11.292 12L6.046 6.754q-.14-.14-.15-.344q-.01-.204.15-.364t.354-.16q.194 0 .354.16L12 11.292l5.246-5.246q.14-.14.344-.15q.204-.01.364.15t.16.354q0 .194-.16.354L12.708 12l5.246 5.246q.14.14.15.344q.01.204-.15.364t-.354.16q-.194 0-.354-.16z"
+            />
+          </svg>
+        </Transition>
+      </button>
+      <Transition>
+        <nav
+          v-if="!show"
+          class="fixed inset-0 flex-col gap-12 bg-white/80 dark:bg-gray-900/90 z-[101] flex justify-center items-center font-mono backdrop-blur-lg"
         >
-          <span>Renderizar</span>
-        </a>
-        <a
-          rel="prefetch"
-          href="/lab/containers"
-          class="link link--dia animate__animated animate__fadeInUp"
-        >
-          <span>Containers</span>
-        </a>
-        <a
-          rel="prefetch"
-          href="/lab/palabras"
-          class="link link--dia animate__animated animate__fadeInUp"
-        >
-          <span>Palabras</span>
-        </a>
-      </nav>
-    </Transition>
-  </div>
+          <a
+            rel="prefetch"
+            href="/"
+            class="link link--dia animate__animated animate__fadeInUp"
+          >
+            <span>Inicio</span>
+          </a>
+          <a
+            rel="prefetch"
+            href="/lab/renders"
+            class="link link--dia animate__animated animate__fadeInUp"
+          >
+            <span>Renderizar</span>
+          </a>
+          <a
+            rel="prefetch"
+            href="/lab/containers"
+            class="link link--dia animate__animated animate__fadeInUp"
+          >
+            <span>Containers</span>
+          </a>
+          <a
+            rel="prefetch"
+            href="/lab/palabras"
+            class="link link--dia animate__animated animate__fadeInUp"
+          >
+            <span>Palabras</span>
+          </a>
+        </nav>
+      </Transition>
+    </div>
+  </Teleport>
 </template>
 
 <style>
@@ -86,24 +98,31 @@ const show = ref(true);
 nav a:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 nav a:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 nav a:nth-child(3) {
   animation-delay: 0.3s;
 }
+
 nav a:nth-child(4) {
   animation-delay: 0.4s;
 }
+
 nav a:nth-child(5) {
   animation-delay: 0.5s;
 }
+
 nav a:nth-child(6) {
   animation-delay: 0.6s;
 }
+
 nav a:nth-child(7) {
   animation-delay: 0.7s;
 }
+
 nav a:nth-child(8) {
   animation-delay: 0.8s;
 }

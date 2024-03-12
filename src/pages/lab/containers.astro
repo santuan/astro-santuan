@@ -2,9 +2,11 @@
 import Gallery from '@/components/Lab/containers/Gallery.astro';
 import GalleryHero from '@/components/Lab/containers/GalleryHero.astro';
 import Layout from '../../layouts/Layout.astro';
+import Offcanvas from '@/components/Offcanvas/Offcanvas.vue';
 ---
 
 <Layout title="Container Fail">
+  <Offcanvas client:load />
   <div class="w-full p-3 mx-auto dark:bg-black">
     <GalleryHero/>
   </div>
