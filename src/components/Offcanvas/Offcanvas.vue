@@ -85,15 +85,6 @@ const show = ref(true);
 </template>
 
 <style>
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.6s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
 
 nav a:nth-child(1) {
   animation-delay: 0.1s;
