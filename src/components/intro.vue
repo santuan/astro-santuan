@@ -1,6 +1,22 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
+import { useMagicKeys } from '@vueuse/core';
 const show = ref(true);
+
+const { M } = useMagicKeys({
+  passive: false,
+  onEventFired(e) {
+    if (e.key === 'j' && (e.metaKey || e.ctrlKey)) e.preventDefault();
+  },
+});
+
+watch([M], (v) => {
+  if (v[0]) handleOpenChange();
+});
+
+function handleOpenChange() {
+  show.value = !show.value;
+}
 </script>
 
 <template>
@@ -76,7 +92,7 @@ const show = ref(true);
           class="border-b-2 h-1/3 md:border-b-0 overflow-hidden relative group grou md:border-r dark:border-white/10 w-full flex justify-center items-center md:h-screen"
         >
           <a rel="prefetch" href="/lab/renders" class="link link--dia mx-auto z-10 relative py-6">
-            <span>Renderizar</span>
+            <span>Renders</span>
           </a>
           <img
             class="opacity-0 absolute object-cover md:h-screen inset-0 duration-1000 z-0 group-hover:opacity-30 group-focus-within:opacity-30"

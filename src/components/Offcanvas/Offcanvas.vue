@@ -84,7 +84,7 @@ function handleOpenChange() {
           href="/lab/renders"
           class="link link--dia animate__animated animate__fadeInUp"
         >
-          <span>Renderizar</span>
+          <span>Renders</span>
         </a>
         <a
           rel="prefetch"
