@@ -2,14 +2,14 @@
   setup
   lang="ts"
 >
-import { ref, watch } from 'vue';
-import { useMagicKeys } from '@vueuse/core';
+import { useMagicKeys } from "@vueuse/core";
+import { ref, watch } from "vue";
 const show = ref(true);
 
 const { M } = useMagicKeys({
   passive: false,
   onEventFired(e) {
-    if (e.key === 'j' && (e.metaKey || e.ctrlKey)) e.preventDefault();
+    if (e.key === "j" && (e.metaKey || e.ctrlKey)) e.preventDefault();
   },
 });
 

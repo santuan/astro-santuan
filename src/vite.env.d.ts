@@ -1,5 +1,5 @@
 // for vite-plugin-pwa
-declare module 'virtual:pwa-register' {
+declare module "virtual:pwa-register" {
   export type RegisterSWOptions = {
     immediate?: boolean;
     onNeedRefresh?: () => void;
@@ -7,6 +7,7 @@ declare module 'virtual:pwa-register' {
     onRegistered?: (
       registration: ServiceWorkerRegistration | undefined,
     ) => void;
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     onRegisterError?: (error: any) => void;
   };
 

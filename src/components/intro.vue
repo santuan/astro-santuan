@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import { useMagicKeys } from '@vueuse/core';
+import { useMagicKeys } from "@vueuse/core";
+import { ref, watch } from "vue";
 const show = ref(true);
 
 const { M } = useMagicKeys({
   passive: false,
   onEventFired(e) {
-    if (e.key === 'j' && (e.metaKey || e.ctrlKey)) e.preventDefault();
+    if (e.key === "j" && (e.metaKey || e.ctrlKey)) e.preventDefault();
   },
 });
 
@@ -64,7 +64,7 @@ function handleOpenChange() {
         muted
         playsinline
         class="object-cover h-[700px] w-full md:h-[900px] absolute top-0 left-0 object-right z-0 md:object-center"
-        poster="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:eco,w_763/v1628508273/encoder/herohdsantuan0001-0250_wpgean.webp"
+        poster="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:eco,w_763/v1628508273/encoder/herohdsantuan0001-0250_wpgean.jpg"
       >
         <source
           src="https://res.cloudinary.com/srcouto/video/upload/q_auto:eco/v1628057438/encoder/herohdsantuan0001-0250_wpgean.mp4"
@@ -95,8 +95,8 @@ function handleOpenChange() {
             <span>Renders</span>
           </a>
           <img
-            class="opacity-0 absolute object-cover md:h-screen inset-0 duration-1000 z-0 group-hover:opacity-30 group-focus-within:opacity-30"
-            src="https://res.cloudinary.com/srcouto/image/upload/v1630556712/stn-renders/567_vpomfk.webp"
+            class="opacity-0 absolute w-full object-cover md:h-screen inset-0 duration-1000 z-0 group-hover:opacity-30 group-focus-within:opacity-30"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,w_700/q_60/v1630556712/stn-renders/567_vpomfk.jpg"
           />
         </div>
         <div
@@ -110,8 +110,8 @@ function handleOpenChange() {
             <span>Containers</span>
           </a>
           <img
-            class="opacity-0 absolute h-screen object-cover inset-0 duration-1000 z-0 group-hover:opacity-30 group-focus-within:opacity-30"
-            src="https://res.cloudinary.com/srcouto/image/upload/v1706811906/container-error-exitoso/348258289_1044107733661321_1560738546194492452_n_nkea4p.webp"
+            class="opacity-0 absolute h-screen object-cover w-full inset-0 duration-1000 z-0 group-hover:opacity-30 group-focus-within:opacity-30"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,w_700/q_60/v1706811906/container-error-exitoso/348258289_1044107733661321_1560738546194492452_n_nkea4p.jpg"
           />
         </div>
         <div
