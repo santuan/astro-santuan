@@ -64,7 +64,7 @@ function handleOpenChange() {
         muted
         playsinline
         class="object-cover h-[700px] w-full md:h-[900px] absolute top-0 left-0 object-right z-0 md:object-center"
-        poster="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:eco,w_763/v1628508273/encoder/herohdsantuan0001-0250_wpgeanwebp"
+        poster="https://res.cloudinary.com/srcouto/video/upload/c_scale,q_auto:eco,w_763/v1628508273/encoder/herohdsantuan0001-0250_wpgean.webp"
       >
         <source
           src="https://res.cloudinary.com/srcouto/video/upload/q_auto:eco/v1628057438/encoder/herohdsantuan0001-0250_wpgean.mp4"
@@ -96,7 +96,7 @@ function handleOpenChange() {
           </a>
           <img
             class="opacity-0 absolute w-full object-cover md:h-screen inset-0 duration-1000 z-0 group-hover:opacity-30 group-focus-within:opacity-30"
-            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,w_700/q_60/v1630556712/stn-renders/567_vpomfkwebp"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,w_700/q_60/v1630556712/stn-renders/567_vpomfk.webp"
           />
         </div>
         <div
@@ -111,7 +111,7 @@ function handleOpenChange() {
           </a>
           <img
             class="opacity-0 absolute h-screen object-cover w-full inset-0 duration-1000 z-0 group-hover:opacity-30 group-focus-within:opacity-30"
-            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,w_700/q_60/v1706811906/container-error-exitoso/348258289_1044107733661321_1560738546194492452_n_nkea4pwebp"
+            src="https://res.cloudinary.com/srcouto/image/upload/c_scale,w_700/q_60/v1706811906/container-error-exitoso/348258289_1044107733661321_1560738546194492452_n_nkea4p.webp"
           />
         </div>
         <div
